@@ -1,2 +1,23 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
+@import url("../blocks/page/page.css");
+
+@import url('../blocks/link/link.css');
+@import url('../blocks/btn/btn.css');
+@import url('../blocks/btn/_no-color/btn_no-color.css');
+@import url('../blocks/btn/_with-color/btn_with-color.css');
+
+/* Header */
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__logo/header__logo.css');
+@import url('../blocks/header/__logo-and-location/header__logo-and-location.css');
+@import url('../blocks/header/__location/header__location.css');
+@import url('../blocks/header/__location-logo/header__location-logo.css');
+@import url('../blocks/header/__nav-links/header__nav-links.css');
+@import url('../blocks/header/__nav-link/header__nav-link.css');
+@import url('../blocks/header/__user-actions/header__user-actions.css');
+@import url('../blocks/header/__support-btn/header__support-btn.css');
+@import url('../blocks/header/__like-logo/header__like-logo.css');
+@import url('../blocks/header/__burger/header__burger.css');
+
+

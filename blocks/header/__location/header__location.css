@@ -1,0 +1,14 @@
+.header__location {
+  margin: 0;
+  background-color: transparent;
+  color: #3B3748;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1268px) {
+  .header__location {
+    display: none;
+  }
+}

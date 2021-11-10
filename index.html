@@ -10,9 +10,30 @@
 </head>
 
 <body class="page">
-  <header class="header"></header>
+  <header class="header">
+    <div class="header__logo-and-location">
+      <img src="./images/logo.svg" alt="Логотип" class="header__logo">
+      <button class="header__location btn btn_no-color" type="button">
+          <img class="header__location-logo" src="./images/location.svg" alt="Иконка локации">
+          Санкт-Петербург
+      </button>
+    </div>
+    <nav class="header__nav-links">
+      <a href="#" class="header__nav-link link">куда пойти</a>
+      <a href="#" class="header__nav-link link">стать участником</a>
+      <a href="#" class="header__nav-link link">о фестивале</a>
+    </nav>
+    <div class="header__user-actions">
+      <a href="#" class="header__nav-link link">
+        <img src="./images/Like.svg" alt="Иконка сердечка" class="header__like-logo">хочу пойти
+      </a>
+      <button class="header__support-btn btn btn_with-color" type="button">поддержать</button>
+      <img src="./images/burger.svg" alt="Иконка бургерного меню" class="header__burger" >
+    </div>
+  </header>
   <main class="main"></main>
   <footer class="footer"></footer>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

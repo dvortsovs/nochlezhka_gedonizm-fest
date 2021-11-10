@@ -1,0 +1,11 @@
+.header__burger {
+  cursor: pointer;
+  margin-left: 36px;
+  display: none;
+}
+
+@media screen and (max-width: 1268px) {
+  .header__burger {
+    display: block;
+  }
+}
