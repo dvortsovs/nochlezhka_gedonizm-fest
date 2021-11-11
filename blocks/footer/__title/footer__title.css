@@ -1,0 +1,8 @@
+.footer__title {
+  text-transform: lowercase;
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+  font-size: 32px;
+  font-weight: 500;
+}
