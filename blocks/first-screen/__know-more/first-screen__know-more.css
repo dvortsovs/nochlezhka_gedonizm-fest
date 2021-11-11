@@ -1,0 +1,17 @@
+.first-screen__know-more {
+  margin: 0;
+  margin: 110px 0 8px 0;
+  font-family: 'TT_Firs_Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3B3748;
+}
+
+@media screen and (max-width: 850px) {
+  .first-screen__know-more {
+    margin: 253px 0 8px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

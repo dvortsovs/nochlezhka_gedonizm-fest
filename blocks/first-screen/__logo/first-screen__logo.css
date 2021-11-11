@@ -1,0 +1,13 @@
+.first-screen__logo {
+  width: 315px;
+  height: 228px;
+  margin-top: 266px;
+}
+
+@media screen and (max-width: 850px) {
+  .first-screen__logo {
+    width: 210px;
+    height: 152px;
+    margin-top: 175px;
+  }
+}

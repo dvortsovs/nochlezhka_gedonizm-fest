@@ -22,6 +22,14 @@
 @import url('../blocks/header/__like-logo/header__like-logo.css');
 @import url('../blocks/header/__burger/header__burger.css');
 
+/* First Screen */
+@import url('../blocks/first-screen/first-screen.css');
+@import url('../blocks/first-screen/__logo/first-screen__logo.css');
+@import url('../blocks/first-screen/__know-more/first-screen__know-more.css');
+@import url('../blocks/first-screen/__button/first-screen__button.css');
+
+@import url('../blocks/about/about.css');
+
 /* Events */
 @import url('../blocks/events/events.css');
 @import url('../blocks/events/__container/events__container.css');
@@ -40,7 +48,6 @@
 @import url('../blocks/card/__desc/card__desc.css');
 @import url('../blocks/card/__address/card__address.css');
 @import url('../blocks/card/__quantity/card__quantity.css');
-
 
 /* Footer */
 @import url("../blocks/footer/footer.css");
