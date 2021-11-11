@@ -20,4 +20,9 @@
 @import url('../blocks/header/__like-logo/header__like-logo.css');
 @import url('../blocks/header/__burger/header__burger.css');
 
+@import url('../blocks/first-screen/first-screen.css');
+@import url('../blocks/first-screen/__logo/first-screen__logo.css');
+@import url('../blocks/first-screen/__know-more/first-screen__know-more.css');
+@import url('../blocks/first-screen/__button/first-screen__button.css');
 
+@import url('../blocks/about/about.css');
