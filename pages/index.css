@@ -1,11 +1,13 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
-@import url("../blocks/page/page.css");
+@import url('../blocks/page/page.css');
+@import url('../blocks/main/main.css');
 
 @import url('../blocks/link/link.css');
 @import url('../blocks/btn/btn.css');
 @import url('../blocks/btn/_no-color/btn_no-color.css');
 @import url('../blocks/btn/_with-color/btn_with-color.css');
+@import url('../blocks/link/_with-border/link_with-border.css');
 
 /* Header */
 @import url('../blocks/header/header.css');
@@ -20,4 +22,12 @@
 @import url('../blocks/header/__like-logo/header__like-logo.css');
 @import url('../blocks/header/__burger/header__burger.css');
 
-
+/* Events */
+@import url('../blocks/events/events.css');
+@import url('../blocks/events/__container/events__container.css');
+@import url('../blocks/events/__title/events__title.css');
+@import url('../blocks/events/__tags/events__tags.css');
+@import url('../blocks/events/__tag/events__tag.css');
+/* Cards */
+@import url('../blocks/cards/cards.css');
+@import url('../blocks/card/card.css');
