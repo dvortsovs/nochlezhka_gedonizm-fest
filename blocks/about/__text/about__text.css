@@ -1,0 +1,21 @@
+.about__text {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 18px 0;
+}
+
+.about__text:last-of-type {
+  margin: 0 0 32px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .about__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 16px 0;
+  }
+
+  .about__text:last-of-type {
+    margin: 0 0 20px 0;
+  }
+}
