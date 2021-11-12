@@ -1,0 +1,16 @@
+.events__tags {
+  margin: 16px 0;
+  max-width: 840px;
+  display: flex;
+}
+
+.events__tags:last-of-type {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 488px) {
+  .events__tags {
+    flex-direction: column;
+    margin: 12px 0 0;
+  }
+}

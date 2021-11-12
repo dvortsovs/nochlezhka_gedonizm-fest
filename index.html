@@ -1,195 +1,285 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <title>Gedonizm-fest</title>
-  </head>
 
-  <body class="page">
-    <header class="header">
-      <div class="header__logo-and-location">
-        <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
-        <button class="header__location btn btn_no-color" type="button">
-          <img
-            class="header__location-logo"
-            src="./images/location.svg"
-            alt="Иконка локации"
-          />
-          Санкт-Петербург
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title>Gedonizm-fest</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__logo-and-location">
+      <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
+      <button class="header__location btn btn_no-color" type="button">
+        <img class="header__location-logo" src="./images/location.svg" alt="Иконка локации"/>
+        Санкт-Петербург
+      </button>
+    </div>
+    <nav class="header__nav-links">
+      <a href="#" target="_blank" class="header__nav-link link">куда пойти</a>
+      <a href="#" target="_blank" class="header__nav-link link">стать участником</a>
+      <a href="#" target="_blank" class="header__nav-link link">о фестивале</a>
+    </nav>
+    <div class="header__user-actions">
+      <a href="#" target="_blank"  class="header__nav-link link">
+        <img src="./images/Like.svg" alt="Иконка сердечка" class="header__like-logo">хочу пойти
+      </a>
+      <button class="header__support-btn btn btn_with-color" type="button">поддержать</button>
+      <img src="./images/burger.svg" alt="Иконка бургерного меню" class="header__burger">
+    </div>
+  </header>
+  <main class="main">
+    <section class="first-screen">
+      <img class="first-screen__logo" src="./images/logo.svg" alt="Логотип">
+      <p class="first-screen__know-more">узнать больше</p>
+      <button class="first-screen__button btn" type="button">
+        <img src="./images/arrow.svg" alt="Стрелка вниз" class="first-screen__arrow">
+      </button>
+    </section>
+    <section class="about">
+      <h2 class="about__title">просто приятно помогать</h2>
+      <div class="about__description">
+        <p class="about__text">Пейте кофе в любимых заведениях,
+          посещайте интересные мероприятия, устраивайте домашние
+          посиделки с друзьями — и помогайте бездомным!
+        </p>
+        <p class="about__text">Целую неделю 26 апреля — 2 мая
+          вся выручка будет перечислена в пользу бездомных.</p>
+        <a href="#" class="about__link">узнать подробнее</a>
       </div>
-      <nav class="header__nav-links">
-        <a href="#" class="header__nav-link link">куда пойти</a>
-        <a href="#" class="header__nav-link link">стать участником</a>
-        <a href="#" class="header__nav-link link">о фестивале</a>
+    </section>
+    <section class="numbers-of-day">
+      <h2 class="numbers-of-day__title">цифры дня</h2>
+      <div class="numbers-of-day__illustrations">
+        <div class="numbers-of-day__numbers">
+          <h3 class="numbers-of-day__subtitle">2 500</h3>
+          <p class="numbers-of-day__text">cтолько обедов приготовили для нуждающихся</p>
+        </div>
+        <div class="numbers-of-day__numbers">
+          <h3 class="numbers-of-day__subtitle">15 000</h3>
+          <p class="numbers-of-day__text">cтолько печенья продали в поддержку акции</p>
+        </div>
+      </div>
+    </section>
+    <section class="events">
+      <div class="events__container">
+        <!--Обёртка для ограничения контента, для поддержки ультрашироких мониторов-->
+        <h2 class="events__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
+        <div class="events__tags">
+          <p class="events__tag link link_with-border">посетить мастер-класс &rarr;</p>
+          <p class="events__tag link link_with-border">выпить кофе &rarr;</p>
+          <p class="events__tag link link_with-border">не выходить из дома &rarr;</p>
+        </div>
+        <div class="events__tags">
+          <p class="events__tag link link_with-border">сходить на экскурсию &rarr;</p>
+          <p class="events__tag link link_with-border">побывать в музее &rarr;</p>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <img src="./images/card-image/human.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
+            <div class="card__caption">
+              <p class="card__type">лекция</p>
+              <p class="card__date">1 мая, 12:30-13:50</p>
+            </div>
+            <div class="card__desc-container">
+              <h2 class="card__title">идентичность: почему нам сложно меняться?</h2>
+              <p class="card__desc">лектор: Мария Бархатова</p>
+            </div>
+            <div class="card__caption">
+              <p class="card__address">улица Блохина, 22</p>
+              <p class="card__quantity">+ ещё 3</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-image/people.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
+            <div class="card__caption">
+              <p class="card__type">еда и напитки</p>
+              <p class="card__date">Пн-Вс, 10:00-22:00</p>
+            </div>
+            <div class="card__desc-container">
+              <h2 class="card__title">xачапури и вино</h2>
+              <p class="card__desc">капучино, эспрессо и американо в пользу Ночлежки</p>
+            </div>
+            <div class="card__caption">
+              <p class="card__address">Малая Конюшенная улицаjhjkh</p>
+              <p class="card__quantity">+ ещё 4</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-image/coffee.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
+            <div class="card__caption">
+              <p class="card__type">еда и напитки</p>
+              <p class="card__date">Пн-Вс, 10:00-22:00</p>
+            </div>
+            <div class="card__desc-container">
+              <h2 class="card__title">coffee therapy</h2>
+              <p class="card__desc">кофе и угощения в пользу Ночлежки</p>
+            </div>
+            <div class="card__caption">
+              <p class="card__address">улица Льва Толстого, 5</p>
+              <p class="card__quantity">+ ещё 24</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-image/cap.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
+            <div class="card__caption">
+              <p class="card__type">посиделки</p>
+            </div>
+            <div class="card__desc-container">
+              <h2 class="card__title">апрельский хэллоуин у Ники</h2>
+              <p class="card__desc">закрытое событие</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-image/coffee.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
+            <div class="card__caption">
+              <p class="card__type">еда и напитки</p>
+              <p class="card__date">Пн-Вс, 10:00-22:00</p>
+            </div>
+            <div class="card__desc-container">
+              <h2 class="card__title">coffee therapy</h2>
+              <p class="card__desc">кофе и угощения в пользу Ночлежки</p>
+            </div>
+            <div class="card__caption">
+              <p class="card__address">улица Льва Толстого, 5</p>
+              <p class="card__quantity">+ ещё 24</p>
+            </div>
+          </li>
+          <li class="card">
+            <img src="./images/card-image/cap.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
+            <div class="card__caption">
+              <p class="card__type">посиделки</p>
+            </div>
+            <div class="card__desc-container">
+              <h2 class="card__title">апрельский хэллоуин у Ники</h2>
+              <p class="card__desc">закрытое событие</p>
+            </div>
+          </li>
+        </ul>
+        <div class="events__progress-container">
+          <div class="events__progress-bar"></div>
+        </div>
+        <a href="#" target="_blank" class="events__look-events link link_with-color">смотреть все события</a>
+      </div>
+    </section>
+    <section class="partners">
+      <h2 class="partners__title">Уже в команде</h2>
+      <div class="partners__container">
+        <div class="partners__logo partners__logo_type_surf"></div>
+        <div class="partners__logo partenrs__logo_type_gallery"></div>
+        <div class="partners__logo partners__logo_type_rynok"></div>
+        <div class="partners__logo partners__logo_type_surf"></div>
+        <div class="partners__logo partenrs__logo_type_gallery"></div>
+        <div class="partners__logo partners__logo_type_rynok"></div>
+        <div class="partners__logo partners__logo_type_surf"></div>
+        <div class="partners__logo partenrs__logo_type_gallery"></div>
+     </section>
+  </main>
+  <footer class="footer">
+    <img
+      class="footer__picture"
+      src="./images/footer_pic.svg"
+      alt="картинка футера"
+    />
+    <div class="footer__container">
+      <h3 class="footer__title">Организатор:</h3>
+      <nav>
+        <ul class="footer__links">
+          <li>
+            <a
+              target="_blank"
+              class="link footer__link"
+              href="https://homeless.ru/"
+              >Ночлежка<img
+                class="footer__link-icon"
+                src="./images/footer_link.svg"
+                alt="иконка ссылки"
+            /></a>
+          </li>
+          <li class="footer__mail">info@hedonismfest.ru</li>
+        </ul>
       </nav>
-      <div class="header__user-actions">
-        <a href="#" class="header__nav-link link">
-          <img
-            src="./images/Like.svg"
-            alt="Иконка сердечка"
-            class="header__like-logo"
-          />хочу пойти
-        </a>
-        <button class="header__support-btn btn btn_with-color" type="button">
-          поддержать
-        </button>
-        <img
-          src="./images/burger.svg"
-          alt="Иконка бургерного меню"
-          class="header__burger"
-        />
-      </div>
-    </header>
-    <main class="main">
-      <section class="first-screen">
-        <img class="first-screen__logo" src="./images/logo.svg" alt="Логотип" />
-        <p class="first-screen__know-more">узнать больше</p>
-        <button class="first-screen__button" type="button">
-          <img
-            src="./images/arrow.svg"
-            alt="Стрелка вниз"
-            class="first-screen__arrow"
-          />
-        </button>
-      </section>
-      <section class="about">
-        <h2 class="about__title">просто приятно помогать</h2>
-        <div class="about__description">
-          <p class="about__text">Пейте кофе в любимых заведениях,
-            посещайте интересные мероприятия, устраивайте домашние
-            посиделки с друзьями — и помогайте бездомным!
-          </p>
-          <p class="about__text">Целую неделю 26 апреля — 2 мая
-            вся выручка будет перечислена в пользу бездомных.</p>
-          <a href="#" class="about__link">узнать подробнее</a>
-        </div>
-      </section>
-      <section class="numbers-of-day">
-        <h2 class="numbers-of-day__title">цифры дня</h2>
-        <div class="numbers-of-day__illustrations">
-          <div class="numbers-of-day__numbers">
-            <h3 class="numbers-of-day__subtitle">2 500</h3>
-            <p class="numbers-of-day__text">cтолько обедов приготовили для нуждающихся</p>
-          </div>
-          <div class="numbers-of-day__numbers">
-            <h3 class="numbers-of-day__subtitle">15 000</h3>
-            <p class="numbers-of-day__text">cтолько печенья продали в поддержку акции</p>
-          </div>
-        </div>
-      </section>
-      <section class="partners">
-        <h2 class="partners__title">Уже в команде</h2>
-        <div class="partners__conatiner">
-          <div class="partners__logo partners__logo_type_surf"></div>
-          <div class="partners__logo partenrs__logo_type_gallery"></div>
-          <div class="partners__logo partners__logo_type_rynok"></div>
-          <div class="partners__logo partners__logo_type_surf"></div>
-          <div class="partners__logo partenrs__logo_type_gallery"></div>
-          <div class="partners__logo partners__logo_type_rynok"></div>
-          <div class="partners__logo partners__logo_type_surf"></div>
-          <div class="partners__logo partenrs__logo_type_gallery"></div>
-       </section>
-    </main>
-    <footer class="footer">
-      <img
-        class="footer__picture"
-        src="./images/footer_pic.svg"
-        alt="картинка футера"
-      />
-      <div class="footer__container">
-        <h3 class="footer__title">Организатор:</h3>
-        <nav>
-          <ul class="footer__links">
-            <li>
-              <a
-                target="_blank"
-                class="link footer__link"
-                href="https://homeless.ru/"
-                >Ночлежка<img
-                  class="footer__link-icon"
-                  src="./images/footer_link.svg"
-                  alt="иконка ссылки"
-              /></a>
-            </li>
-            <li class="footer__mail">info@hedonismfest.ru</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__container">
-        <h3 class="footer__title">Сделано с любовью:</h3>
-        <nav>
-          <ul class="footer__links">
-            <li>
-              <a
-                target="_blank"
-                class="link footer__link"
-                href="https://fastsol.digital/"
-              >
-                Fastsol Digital<img
-                  class="footer__link-icon"
-                  src="./images/footer_link.svg"
-                  alt="иконка ссылки"
-                />
-              </a>
-            </li>
-            <li>
-              <a class="link footer__link" href="https://shishki.co/"
-                >shishki.collective<img
-                  class="footer__link-icon"
-                  src="./images/footer_link.svg"
-                  alt="иконка ссылки"
-              /></a>
-            </li>
-            <li>
-              <a class="link footer__link" href="https://practicum.yandex.ru/"
-                >студентами Яндекс.Практикума<img
-                  class="footer__link-icon"
-                  src="./images/footer_link.svg"
-                  alt="иконка ссылки"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__container">
-        <h3 class="footer__title">Мы в соцсетях:</h3>
-        <nav>
-          <ul class="footer__links footer__links_type_social">
-            <li>
-              <a class="footer__link_type-social" href="#">
-                <img
-                  class="footer__social-icon"
-                  src="./images/facebook.svg"
-                  alt="фейсбук"
-                />
-              </a>
-            </li>
-            <li>
-              <a class="footer__link_type-social" href="#">
-                <img
-                  class="footer__social-icon"
-                  src="./images/instagram.svg"
-                  alt="инстаграм"
-                />
-              </a>
-            </li>
-            <li>
-              <a class="footer__link_type-social" href="#">
-                <img
-                  class="footer__social-icon"
-                  src="./images/VK.svg"
-                  alt="вк"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-    <script src="./scripts/index.js"></script>
-  </body>
+    </div>
+    <div class="footer__container">
+      <h3 class="footer__title">Сделано с любовью:</h3>
+      <nav>
+        <ul class="footer__links">
+          <li>
+            <a
+              target="_blank"
+              class="link footer__link"
+              href="https://fastsol.digital/"
+            >
+              Fastsol Digital<img
+                class="footer__link-icon"
+                src="./images/footer_link.svg"
+                alt="иконка ссылки"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="link footer__link" href="https://shishki.co/"
+              >shishki.collective<img
+                class="footer__link-icon"
+                src="./images/footer_link.svg"
+                alt="иконка ссылки"
+            /></a>
+          </li>
+          <li>
+            <a class="link footer__link" href="https://practicum.yandex.ru/"
+              >студентами Яндекс.Практикума<img
+                class="footer__link-icon"
+                src="./images/footer_link.svg"
+                alt="иконка ссылки"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__container">
+      <h3 class="footer__title">Мы в соцсетях:</h3>
+      <nav>
+        <ul class="footer__links footer__links_type_social">
+          <li>
+            <a class="footer__link_type-social" href="#">
+              <img
+                class="footer__social-icon"
+                src="./images/facebook.svg"
+                alt="фейсбук"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="footer__link_type-social" href="#">
+              <img
+                class="footer__social-icon"
+                src="./images/instagram.svg"
+                alt="инстаграм"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="footer__link_type-social" href="#">
+              <img
+                class="footer__social-icon"
+                src="./images/VK.svg"
+                alt="вк"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="./scripts/index.js"></script>
+</body>
 </html>
