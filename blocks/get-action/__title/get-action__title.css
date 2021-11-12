@@ -1,4 +1,5 @@
 .get-action__title {
+  max-width: 420px;
   color: #3B3748;
   font-size: 48px;
   line-height: 52px;
@@ -7,4 +8,11 @@
   grid-row: span 3;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 850px) {
+  .get-action__title {
+    color: #fff;
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
