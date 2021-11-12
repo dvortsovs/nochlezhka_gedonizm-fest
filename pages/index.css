@@ -44,6 +44,13 @@
 @import url('../blocks/numbers-of-day/__subtitle/numbers-of-day__subtitle.css');
 @import url('../blocks/numbers-of-day/__text/numbers-of-day__text.css');
 
+/* Get action */
+@import url('../blocks/get-action/get-action.css');
+@import url('../blocks/get-action/__container/get-action__container.css');
+@import url('../blocks/get-action/__title/get-action__title.css');
+@import url('../blocks/get-action/__text/get-action__text.css');
+@import url('../blocks/get-action/__link/get-action__link.css');
+
 /* Events */
 @import url('../blocks/events/events.css');
 @import url('../blocks/events/__container/events__container.css');
