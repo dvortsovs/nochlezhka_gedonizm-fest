@@ -1,0 +1,28 @@
+.about__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #3B3748;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 204px;
+  height: 48px;
+
+  border: 2px solid #3B3748;
+  box-sizing: border-box;
+  border-radius: 26px;
+}
+
+@media screen and (max-width: 850px) {
+  .about__link {
+    width: 179px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

@@ -14,6 +14,6 @@
 @media screen and (max-width: 850px) {
   .first-screen {
     background-image: url(../../images/firsr-screen-mobile.svg);
-    background-position: center -68px;
+    min-height: 652px;
   }
 }
