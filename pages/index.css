@@ -8,6 +8,7 @@
 @import url('../blocks/btn/_no-color/btn_no-color.css');
 @import url('../blocks/btn/_with-color/btn_with-color.css');
 @import url('../blocks/link/_with-border/link_with-border.css');
+@import url('../blocks/link/_with-color/link_with-color.css');
 
 /* Header */
 @import url('../blocks/header/header.css');
@@ -36,6 +37,9 @@
 @import url('../blocks/events/__title/events__title.css');
 @import url('../blocks/events/__tags/events__tags.css');
 @import url('../blocks/events/__tag/events__tag.css');
+@import url('../blocks/events/__progress-container/events__progress-container.css');
+@import url('../blocks/events/__progress-bar/events__progress-bar.css');
+@import url('../blocks/events/__look-events/events__look-events.css');
 /* Cards */
 @import url('../blocks/cards/cards.css');
 @import url('../blocks/card/card.css');
@@ -48,6 +52,7 @@
 @import url('../blocks/card/__desc/card__desc.css');
 @import url('../blocks/card/__address/card__address.css');
 @import url('../blocks/card/__quantity/card__quantity.css');
+@import url('../blocks/card/__like-btn/card__like-btn.css');
 
 /* Footer */
 @import url("../blocks/footer/footer.css");

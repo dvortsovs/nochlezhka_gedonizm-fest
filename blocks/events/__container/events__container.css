@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding-left: 40px;
 }
+
+@media screen and (max-width: 440px) {
+  .events__container {
+    padding: 0;
+  }
+}

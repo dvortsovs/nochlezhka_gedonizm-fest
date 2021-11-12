@@ -7,3 +7,10 @@
   line-height: 52px;
   text-transform: lowercase;
 }
+
+@media screen and (max-width: 440px) {
+  .events__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}

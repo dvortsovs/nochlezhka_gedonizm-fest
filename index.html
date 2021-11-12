@@ -19,12 +19,12 @@
       </button>
     </div>
     <nav class="header__nav-links">
-      <a href="#" class="header__nav-link link">куда пойти</a>
-      <a href="#" class="header__nav-link link">стать участником</a>
-      <a href="#" class="header__nav-link link">о фестивале</a>
+      <a href="#" target="_blank" class="header__nav-link link">куда пойти</a>
+      <a href="#" target="_blank" class="header__nav-link link">стать участником</a>
+      <a href="#" target="_blank" class="header__nav-link link">о фестивале</a>
     </nav>
     <div class="header__user-actions">
-      <a href="#" class="header__nav-link link">
+      <a href="#" target="_blank"  class="header__nav-link link">
         <img src="./images/Like.svg" alt="Иконка сердечка" class="header__like-logo">хочу пойти
       </a>
       <button class="header__support-btn btn btn_with-color" type="button">поддержать</button>
@@ -45,17 +45,18 @@
         <!--Обёртка для ограничения контента, для поддержки ультрашироких мониторов-->
         <h2 class="events__title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
         <div class="events__tags">
-          <p class="events__tag link link_with-border">посетить мастер-класс &#8594;</p>
-          <p class="events__tag link link_with-border">выпить кофе &#8594;</p>
-          <p class="events__tag link link_with-border">не выходить из дома &#8594;</p>
+          <p class="events__tag link link_with-border">посетить мастер-класс &rarr;</p>
+          <p class="events__tag link link_with-border">выпить кофе &rarr;</p>
+          <p class="events__tag link link_with-border">не выходить из дома &rarr;</p>
         </div>
         <div class="events__tags">
-          <p class="events__tag link link_with-border">сходить на экскурсию &#8594;</p>
-          <p class="events__tag link link_with-border">побывать в музее &#8594;</p>
+          <p class="events__tag link link_with-border">сходить на экскурсию &rarr;</p>
+          <p class="events__tag link link_with-border">побывать в музее &rarr;</p>
         </div>
-        <div class="cards">
-          <div class="card">
+        <ul class="cards">
+          <li class="card">
             <img src="./images/card-image/human.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
             <div class="card__caption">
               <p class="card__type">лекция</p>
               <p class="card__date">1 мая, 12:30-13:50</p>
@@ -68,9 +69,10 @@
               <p class="card__address">улица Блохина, 22</p>
               <p class="card__quantity">+ ещё 3</p>
             </div>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <img src="./images/card-image/people.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
             <div class="card__caption">
               <p class="card__type">еда и напитки</p>
               <p class="card__date">Пн-Вс, 10:00-22:00</p>
@@ -83,9 +85,10 @@
               <p class="card__address">Малая Конюшенная улицаjhjkh</p>
               <p class="card__quantity">+ ещё 4</p>
             </div>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <img src="./images/card-image/coffee.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
             <div class="card__caption">
               <p class="card__type">еда и напитки</p>
               <p class="card__date">Пн-Вс, 10:00-22:00</p>
@@ -98,9 +101,10 @@
               <p class="card__address">улица Льва Толстого, 5</p>
               <p class="card__quantity">+ ещё 24</p>
             </div>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <img src="./images/card-image/cap.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
             <div class="card__caption">
               <p class="card__type">посиделки</p>
             </div>
@@ -108,9 +112,10 @@
               <h2 class="card__title">апрельский хэллоуин у Ники</h2>
               <p class="card__desc">закрытое событие</p>
             </div>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <img src="./images/card-image/coffee.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
             <div class="card__caption">
               <p class="card__type">еда и напитки</p>
               <p class="card__date">Пн-Вс, 10:00-22:00</p>
@@ -123,9 +128,10 @@
               <p class="card__address">улица Льва Толстого, 5</p>
               <p class="card__quantity">+ ещё 24</p>
             </div>
-          </div>
-          <div class="card">
+          </li>
+          <li class="card">
             <img src="./images/card-image/cap.jpg" alt="Человек" class="card__image">
+            <img src="./images/card-like.svg" alt="лайк" class="card__like-btn">
             <div class="card__caption">
               <p class="card__type">посиделки</p>
             </div>
@@ -133,8 +139,12 @@
               <h2 class="card__title">апрельский хэллоуин у Ники</h2>
               <p class="card__desc">закрытое событие</p>
             </div>
-          </div>
+          </li>
+        </ul>
+        <div class="events__progress-container">
+          <div class="events__progress-bar"></div>
         </div>
+        <a href="#" target="_blank" class="events__look-events link link_with-color">смотреть все события</a>
       </div>
     </section>
   </main>
