@@ -1,0 +1,16 @@
+.get-action__link {
+  text-decoration: none;
+  color: #3B3748;
+  border: 2px solid #3B3748;
+  box-sizing: border-box;
+  border-radius: 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 48px;
+  margin: 24px 0 0;
+}

@@ -1,0 +1,8 @@
+.get-action__container {
+  width: calc(100% - 560px);
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 420px 420px;
+  grid-template-rows: auto auto auto;
+  column-gap: 40px;
+}
