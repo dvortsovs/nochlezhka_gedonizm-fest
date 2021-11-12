@@ -1,31 +1,16 @@
-.partners__conatiner {
+.partners__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 12px auto 0 auto;
   height: 170px;
-}
-
-.partners__conatiner::-webkit-scrollbar {
-  width: 0;
-}
-
-@media screen and (max-width: 1439px) {
-  .partners__conatiner {
-    width: 1200px;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .partners__conatiner {
-    width: 900px;
-  }
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 @media screen and (max-width: 990px) {
-  .partners__conatiner {
+  .partners__container {
     width: 340px;
   }
 }

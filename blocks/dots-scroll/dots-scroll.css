@@ -1,0 +1,12 @@
+.dots-scroll{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 360px){
+  .dots-scroll{
+    display: flex;
+  }
+}

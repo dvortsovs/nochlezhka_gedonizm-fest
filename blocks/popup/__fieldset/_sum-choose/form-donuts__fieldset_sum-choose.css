@@ -1,0 +1,7 @@
+.form-donuts__fieldset_sum-choose{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 0 16px 0;
+}

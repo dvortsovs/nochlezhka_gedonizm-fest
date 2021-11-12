@@ -1,0 +1,17 @@
+.photos{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 360px;
+  padding: 0 50px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 360px){
+  .photos{
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,12 @@
+.card {
+  position: relative;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  min-width: 320px;
+  min-height: 388px;
+  background-color: #FCFAF7;
+  border-radius: 24px;
+  list-style: none;
+}

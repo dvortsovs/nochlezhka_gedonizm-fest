@@ -1,0 +1,14 @@
+.form-donuts__fieldset-lable{
+  display: block;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.13;
+  color: #3B3748;
+}
+
+@media screen and (max-width: 650px){
+  .form-donuts__fieldset-lable{
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}

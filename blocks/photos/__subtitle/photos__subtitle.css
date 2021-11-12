@@ -1,0 +1,15 @@
+.photos__subtitle{
+  margin-block: 0;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 360px){
+  .photos__subtitle{
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 12px;
+  }
+}

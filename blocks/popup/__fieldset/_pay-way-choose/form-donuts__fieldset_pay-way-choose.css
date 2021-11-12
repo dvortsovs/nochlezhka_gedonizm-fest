@@ -1,0 +1,5 @@
+.form-donuts__fieldset_pay-way-choose{
+  display: flex;
+  flex-direction: column;
+  margin-top: 29px;
+}

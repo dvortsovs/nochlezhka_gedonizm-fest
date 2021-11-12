@@ -1,0 +1,15 @@
+.dots-scroll__dot{
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #96949E;
+}
+
+.dots-scroll__dot:hover{
+  opacity: .5;
+}
+
+.dots-scroll__dot:nth-child(even){
+  margin: 0 12px;
+}

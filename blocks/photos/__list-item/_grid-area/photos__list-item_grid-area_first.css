@@ -1,0 +1,9 @@
+.photos__list-item_grid-area_first{
+  grid-area: first;
+}
+
+@media screen and (max-width: 360px){
+  .photos__list-item_grid-area_first{
+    display: none;
+  }
+}

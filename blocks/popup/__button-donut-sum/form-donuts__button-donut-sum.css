@@ -1,0 +1,22 @@
+.form-donuts__button-donut-sum{
+  box-sizing: border-box;
+  width: 169px;
+  height: 48px;
+  border: 2px solid #3B3748;
+  border-radius: 26px;
+  margin-top: 16px;
+  background-color: rgba(0, 0, 0, 0);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3B3748;
+}
+
+@media screen and (max-width: 650px) {
+  .form-donuts__button-donut-sum{
+    width: 154px;
+    height: 44px;
+    border-radius: 22px;
+  }
+}

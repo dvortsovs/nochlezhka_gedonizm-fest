@@ -1,0 +1,27 @@
+.photos__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    "first big big ."
+    ". big big second"
+    "third fourth . .";
+  grid-gap: 20px;
+  margin-block: 0;
+  margin-top: 40px;
+  padding-inline: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1440px){
+  .photos__list{
+    grid-gap: calc(20px - 0.01851852 * (1440px - 100vw));
+  }
+}
+
+@media screen and (max-width: 360px){
+  .photos__list{
+    display: flex;
+    margin-top: 20px;
+  }
+}

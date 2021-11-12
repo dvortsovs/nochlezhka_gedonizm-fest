@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1268px) {
   .footer__social-icon {
     width: 32px;
     height: 32px;
