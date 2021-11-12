@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: min-content 310px 427px 310px;
   grid-template-rows: 1fr;
-  gap: 40px;
   justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
@@ -10,7 +9,7 @@
   background-color: #ebe9ed;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1268px) {
   .footer {
     background-color: #ffd400;
     grid-template-columns: 1fr;

@@ -44,15 +44,6 @@
 @import url('../blocks/numbers-of-day/__subtitle/numbers-of-day__subtitle.css');
 @import url('../blocks/numbers-of-day/__text/numbers-of-day__text.css');
 
-/* Partners */
-@import url('../blocks/partners/partners.css');
-@import url('../blocks/partners/__title/partners__title.css');
-@import url('../blocks/partners/__container/partners__container.css');
-@import url('../blocks/partners/__logo/partners__logo.css');
-@import url('../blocks/partners/__logo/_type/partners__logo_type_surf.css');
-@import url('../blocks/partners/__logo/_type/partenrs__logo_type_gallery.css');
-@import url('../blocks/partners/__logo/_type/partners__logo_type_rynok.css');
-
 /* Events */
 @import url('../blocks/events/events.css');
 @import url('../blocks/events/__container/events__container.css');
@@ -75,6 +66,15 @@
 @import url('../blocks/card/__address/card__address.css');
 @import url('../blocks/card/__quantity/card__quantity.css');
 @import url('../blocks/card/__like-btn/card__like-btn.css');
+
+/* Partners */
+@import url('../blocks/partners/partners.css');
+@import url('../blocks/partners/__title/partners__title.css');
+@import url('../blocks/partners/__container/partners__container.css');
+@import url('../blocks/partners/__logo/partners__logo.css');
+@import url('../blocks/partners/__logo/_type/partners__logo_type_surf.css');
+@import url('../blocks/partners/__logo/_type/partenrs__logo_type_gallery.css');
+@import url('../blocks/partners/__logo/_type/partners__logo_type_rynok.css');
 
 /* Footer */
 @import url("../blocks/footer/footer.css");

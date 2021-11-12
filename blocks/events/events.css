@@ -3,7 +3,7 @@
   background-color: rgba(113, 0, 255, .1);
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 488px) {
   .events {
     margin: 0;
     padding: 40px 20px;
