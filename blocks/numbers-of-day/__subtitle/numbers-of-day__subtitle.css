@@ -7,3 +7,9 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 850px) {
+  .numbers-of-day__subtitle {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
