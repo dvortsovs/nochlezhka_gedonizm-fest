@@ -1,0 +1,10 @@
+.numbers-of-day__numbers {
+  margin-top: 332px;
+  width: 303px;
+  margin-left: 17.8%;
+}
+.numbers-of-day__numbers:last-of-type {
+  width: 303px;
+  margin-left: 60%;
+  margin-top: 132px;
+}

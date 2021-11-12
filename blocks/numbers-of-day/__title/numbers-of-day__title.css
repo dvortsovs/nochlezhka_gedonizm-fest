@@ -1,0 +1,9 @@
+.numbers-of-day__title {
+  margin: 80px 40px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  text-transform: lowercase;
+  letter-spacing: -0.01em;
+  color: #3B3748;
+}

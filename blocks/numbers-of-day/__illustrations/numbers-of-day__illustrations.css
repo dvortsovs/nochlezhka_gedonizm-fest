@@ -1,0 +1,10 @@
+.numbers-of-day__illustrations {
+  height: 720px;
+  margin: 40px 40px 80px;
+  background-image: url('../../../images/number-of-day__illustrations.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
