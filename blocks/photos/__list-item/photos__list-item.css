@@ -1,0 +1,6 @@
+.photos__list-item::marker {
+  white-space: normal;
+  text-transform: none;
+  unicode-bidi: isolate;
+  font-variant-numeric: normal;
+}
