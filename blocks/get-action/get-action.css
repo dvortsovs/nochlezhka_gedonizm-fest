@@ -1,0 +1,10 @@
+  .get-action {
+    background-color: #FFD400;
+    width: 100%;
+    display: flex;
+  }
+  @media screen and (max-width: 850px) {
+    .get-action {
+      background-color: #F40934;
+    }
+  }
