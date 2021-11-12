@@ -3,3 +3,10 @@
   height: 170px;
   object-fit: none;
 }
+
+@media screen and (max-width: 1439px) {
+  .partners__logo {
+    line-height: 170px;
+    flex: 0 0 auto;
+  }
+}

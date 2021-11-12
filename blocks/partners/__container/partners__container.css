@@ -1,7 +1,31 @@
 .partners__conatiner {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 12px;
+  justify-content: space-between;
+  margin: 12px auto 0 auto;
+  height: 170px;
+}
+
+.partners__conatiner::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (max-width: 1439px) {
+  .partners__conatiner {
+    width: 1200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .partners__conatiner {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .partners__conatiner {
+    width: 340px;
+  }
 }

@@ -1,0 +1,9 @@
+.partners__logo_type_rynok {
+  background-image: url('../../../../images/vasilyostrovky-rynok_logo.svg');
+}
+
+@media screen and (max-width: 990px) {
+  .partners__logo_type_rynok {
+    background-image: url('../../../../images/rynok_logo_black.png'); /* has white background */
+  }
+}
