@@ -13,6 +13,10 @@
   color: #FCFAF7;
 }
 
+.form-donuts__submit-button:hover{
+  background-color: #5100B8;
+}
+
 @media screen and (max-width: 650px){
   .form-donuts__submit-button{
     height: 44px;

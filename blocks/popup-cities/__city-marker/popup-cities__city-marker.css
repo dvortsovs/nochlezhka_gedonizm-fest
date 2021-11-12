@@ -1,0 +1,9 @@
+.popup-cities__city-marker{
+  display: none;
+  width: 20px;
+  height: 14px;
+  background-image: url("./images/popup-cities__city-marker-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,25 @@
+.popup-cities{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  box-sizing: border-box;
+  width: 360px;
+  height: 652px;
+  padding: 20px;
+  top: 88px;
+  left: 0;
+  background-color: #FCFAF7;
+}
+
+@media screen and (max-width: 1270px){
+  .popup-cities{
+    left: unset;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .popup-cities{
+    top: 68px;
+  }
+}

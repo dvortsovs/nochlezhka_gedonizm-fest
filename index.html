@@ -281,6 +281,77 @@
     </div>
   </footer>
   <!--Зона popups------------------------------------------------------------------------>
+  <!--Popup Навигации-->
+  <section class="popup-nav">
+    <label for="popup-nav__city-choose-btn" class="popup-nav__lable">ваш город:</label>
+    <button type="button" class="popup-nav__city-choose-btn" id="popup-nav__city-choose-btn">
+      <p class="popup-nav__city">Санкт-Петербург</p>
+      <div class="popup-nav__city-list"></div>
+    </button>
+    <label for="popup-nav__nav-container" class="popup-nav__lable popup-nav__lable_nav-menu">навигация</label>
+    <nav class="popup-nav__nav-container" id="popup-nav__nav-container">
+      <ul class="popup-nav__nav-list">
+        <li class="popup-nav__nav-list-item">
+          <a href="#" class="popup-nav__nav-link">куда пойти</a>
+        </li>
+        <li class="popup-nav__nav-list-item">
+          <a href="#" class="popup-nav__nav-link">стать участником</a>
+        </li>
+        <li class="popup-nav__nav-list-item">
+          <a href="#" class="popup-nav__nav-link">о фестивале</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="popup-nav__org-link">
+      <img class="popup-nav__org-logo"
+           src="./blocks/popup-nav/__org-logo/images/popup-nav__org-logo-image.svg"
+           alt="Логотип Ночлежка">
+      <p class="popup-nav__org-description">
+        благотворительная организация
+      </p>
+    </a>
+    <button type="button" class="popup-nav__donate-btn" id="popup-nav__donate-btn">пожертвовать</button>
+  </section>
+  <!--Popup выбора города-->
+  <section class="popup-cities">
+    <button type="button" class="popup-cities__backspace-btn">
+      <div class="popup-cities__backspace-arrow"></div>
+      <p class="popup-cities__backspace">назад</p>
+    </button>
+    <label for="popup-cities__list" class="popup-cities__lable">ваш город:</label>
+    <ul class="popup-cities__list" id="popup-cities__list">
+      <li class="popup-cities__list-item">
+        <button type="button" class="popup-cities__city-choose-btn">
+          <p class="popup-cities__city">Москва</p>
+          <div class="popup-cities__city-marker"></div>
+        </button>
+      </li>
+      <li class="popup-cities__list-item">
+        <button type="button" class="popup-cities__city-choose-btn">
+          <p class="popup-cities__city">Санкт-Петербург</p>
+          <div class="popup-cities__city-marker"></div>
+        </button>
+      </li>
+      <li class="popup-cities__list-item">
+        <button type="button" class="popup-cities__city-choose-btn">
+          <p class="popup-cities__city">Сочи</p>
+          <div class="popup-cities__city-marker"></div>
+        </button>
+      <li class="popup-cities__list-item">
+        <button type="button" class="popup-cities__city-choose-btn">
+          <p class="popup-cities__city">Калуга</p>
+          <div class="popup-cities__city-marker"></div>
+        </button>
+      </li>
+      <li class="popup-cities__list-item">
+        <button type="button" class="popup-cities__city-choose-btn">
+          <p class="popup-cities__city">Екатеринбург</p>
+          <div class="popup-cities__city-marker"></div>
+        </button>
+      </li>
+    </ul>
+  </section>
+  <!--Popup Пожертвований-->
   <section class="popup popup_type_donuts">
     <div class="popup__container">
       <div class="popup__header-container">
@@ -342,7 +413,6 @@
     </div>
   </section>
   <!--Зона скриптов------------------------------------------------------------------------>
-
   <script src="./scripts/index.js"></script>
 </body>
 

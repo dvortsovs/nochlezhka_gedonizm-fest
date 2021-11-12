@@ -1,0 +1,13 @@
+.popup-nav__org-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 195px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #96949E;
+  text-decoration: none;
+  justify-self: center;
+}
