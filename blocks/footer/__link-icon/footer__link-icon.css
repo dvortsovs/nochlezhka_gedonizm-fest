@@ -6,7 +6,7 @@
   vertical-align: middle;
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1300px) {
   .footer__link-icon {
     width: 20px;
     height: 20px;
