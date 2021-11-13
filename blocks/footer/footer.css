@@ -9,11 +9,12 @@
   background-color: #ebe9ed;
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1300px) {
   .footer {
     background-color: #ffd400;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
+    gap: 48px;
     padding: 40px 20px 40px 20px;
   }
 }
