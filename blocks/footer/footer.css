@@ -14,6 +14,7 @@
     background-color: #ffd400;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
+    justify-content: center;
     gap: 48px;
     padding: 40px 20px 40px 20px;
   }

@@ -1,6 +1,7 @@
 .footer__link {
   display: flex;
   margin: 0 0 24px 0;
+  width: fit-content;
 }
 
 .footer__link:nth-child(3) {
@@ -12,5 +13,6 @@
     justify-content: space-between;
     font-size: 16px;
     line-height: 20px;
+    width: auto;
   }
 }
