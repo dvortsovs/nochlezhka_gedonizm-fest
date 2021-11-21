@@ -4,6 +4,12 @@
   height: 12px;
   border-radius: 50%;
   background-color: #96949E;
+  padding: 0;
+  margin: 0;
+  white-space: normal;
+  text-transform: none;
+  unicode-bidi: isolate;
+  font-variant-numeric: normal;
 }
 
 .dots-scroll__dot:hover{
