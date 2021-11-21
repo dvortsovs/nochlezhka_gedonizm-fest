@@ -81,7 +81,7 @@
 @import url('../blocks/partners/__container/partners__container.css');
 @import url('../blocks/partners/__logo/partners__logo.css');
 @import url('../blocks/partners/__logo/_type/partners__logo_type_surf.css');
-@import url('../blocks/partners/__logo/_type/partenrs__logo_type_gallery.css');
+@import url('../blocks/partners/__logo/_type/partners__logo_type_gallery.css');
 @import url('../blocks/partners/__logo/_type/partners__logo_type_rynok.css');
 
 /* Footer */
@@ -92,8 +92,10 @@
 @import url("../blocks/footer/__links/footer__links.css");
 @import url("../blocks/footer/__links/_type/footer__links_type_social.css");
 @import url("../blocks/footer/__link/footer__link.css");
-@import url("../blocks/footer/__link/_type/footer__link_type_social.css");
 @import url("../blocks/footer/__link-icon/footer__link-icon.css");
+@import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_facebook.css");
+@import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_instagram.css");
+@import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_vk.css");
 @import url("../blocks/footer/__mail/footer__mail.css");
 @import url("../blocks/footer/__social-icon/footer__social-icon.css");
 

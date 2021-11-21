@@ -214,13 +214,13 @@
         </li>
       </ul>
     </section>
-    <ul class="dots-scroll">
-      <li class="dots-scroll__dot dots-scroll__dot_active"></li>
-      <li class="dots-scroll__dot"></li>
-      <li class="dots-scroll__dot"></li>
-      <li class="dots-scroll__dot"></li>
-      <li class="dots-scroll__dot"></li>
-    </ul>
+    <div class="dots-scroll">
+      <div class="dots-scroll__dot dots-scroll__dot_active"></div>
+      <div class="dots-scroll__dot"></div>
+      <div class="dots-scroll__dot"></div>
+      <div class="dots-scroll__dot"></div>
+      <div class="dots-scroll__dot"></div>
+    </div>
     <section class="partners">
       <h2 class="partners__title">Уже в команде</h2>
       <div class="partners__container">
@@ -295,13 +295,13 @@
   <!--Зона popups------------------------------------------------------------------------>
   <!--Popup Навигации-->
   <section class="popup-nav">
-    <h2 class="popup-nav__lable">ваш город:</h2>
-    <button type="button" class="popup-nav__city-choose-btn">
-      <span class="popup-nav__city">Санкт-Петербург</span>
-      <span class="popup-nav__city-list"></span>
+    <label for="popup-nav__city-choose-btn" class="popup-nav__lable">ваш город:</label>
+    <button type="button" class="popup-nav__city-choose-btn" id="popup-nav__city-choose-btn">
+      <p class="popup-nav__city">Санкт-Петербург</p>
+      <div class="popup-nav__city-list"></div>
     </button>
-    <h2 class="popup-nav__lable popup-nav__lable_nav-menu">навигация</h2>
-    <nav class="popup-nav__nav-container">
+    <label for="popup-nav__nav-container" class="popup-nav__lable popup-nav__lable_nav-menu">навигация</label>
+    <nav class="popup-nav__nav-container" id="popup-nav__nav-container">
       <ul class="popup-nav__nav-list">
         <li class="popup-nav__nav-list-item">
           <a href="#" class="popup-nav__nav-link">куда пойти</a>
@@ -318,47 +318,47 @@
       <img class="popup-nav__org-logo"
            src="./blocks/popup-nav/__org-logo/images/popup-nav__org-logo-image.svg"
            alt="Логотип Ночлежка">
-      <span class="popup-nav__org-description">
+      <p class="popup-nav__org-description">
         благотворительная организация
-      </span>
+      </p>
     </a>
     <button type="button" class="popup-nav__donate-btn" id="popup-nav__donate-btn">пожертвовать</button>
   </section>
   <!--Popup выбора города-->
   <section class="popup-cities">
     <button type="button" class="popup-cities__backspace-btn">
-      <span class="popup-cities__backspace-arrow"></span>
-      <span class="popup-cities__backspace">назад</span>
+      <div class="popup-cities__backspace-arrow"></div>
+      <p class="popup-cities__backspace">назад</p>
     </button>
-    <h2 class="popup-cities__lable">ваш город:</h2>
-    <ul class="popup-cities__list">
+    <label for="popup-cities__list" class="popup-cities__lable">ваш город:</label>
+    <ul class="popup-cities__list" id="popup-cities__list">
       <li class="popup-cities__list-item">
         <button type="button" class="popup-cities__city-choose-btn">
-          <span class="popup-cities__city">Москва</span>
-          <span class="popup-cities__city-marker"></span>
+          <p class="popup-cities__city">Москва</p>
+          <div class="popup-cities__city-marker"></div>
         </button>
       </li>
       <li class="popup-cities__list-item">
         <button type="button" class="popup-cities__city-choose-btn">
-          <span class="popup-cities__city">Санкт-Петербург</span>
-          <span class="popup-cities__city-marker"></span>
+          <p class="popup-cities__city">Санкт-Петербург</p>
+          <div class="popup-cities__city-marker"></div>
         </button>
       </li>
       <li class="popup-cities__list-item">
         <button type="button" class="popup-cities__city-choose-btn">
-          <span class="popup-cities__city">Сочи</span>
-          <span class="popup-cities__city-marker"></span>
+          <p class="popup-cities__city">Сочи</p>
+          <div class="popup-cities__city-marker"></div>
         </button>
       <li class="popup-cities__list-item">
         <button type="button" class="popup-cities__city-choose-btn">
-          <span class="popup-cities__city">Калуга</span>
-          <span class="popup-cities__city-marker"></span>
+          <p class="popup-cities__city">Калуга</p>
+          <div class="popup-cities__city-marker"></div>
         </button>
       </li>
       <li class="popup-cities__list-item">
         <button type="button" class="popup-cities__city-choose-btn">
-          <span class="popup-cities__city">Екатеринбург</span>
-          <span class="popup-cities__city-marker"></span>
+          <p class="popup-cities__city">Екатеринбург</p>
+          <div class="popup-cities__city-marker"></div>
         </button>
       </li>
     </ul>
@@ -371,8 +371,8 @@
         <button type="button" class="popup__button-close"></button>
       </div>
       <form name="form" class="form-donuts">
-        <h3 class="form-donuts__fieldset-lable form-donuts__fieldset-lable_sum-choose">сумма</h3>
-        <fieldset class="form-donuts__fieldset form-donuts__fieldset_sum-choose">
+        <label for="form-donuts__fieldset_sum-choose" class="form-donuts__fieldset-lable form-donuts__fieldset-lable_sum-choose">сумма</label>
+        <fieldset class="form-donuts__fieldset form-donuts__fieldset_sum-choose" id="form-donuts__fieldset_sum-choose">
           <button type="button" class="form-donuts__button-donut-sum">100 ₽</button>
           <button type="button" class="form-donuts__button-donut-sum">300 ₽</button>
           <button type="button" class="form-donuts__button-donut-sum">500 ₽</button>
@@ -384,8 +384,8 @@
                   placeholder="другая сумма"
                   type="text">
         </fieldset>
-        <h3 class="form-donuts__fieldset-lable form-donuts__fieldset-lable_email">email</h3>
-        <fieldset class="form-donuts__fieldset form-donuts__fieldset_email">
+        <label for="form-donuts__fieldset_email" class="form-donuts__fieldset-lable form-donuts__fieldset-lable_email">email</label>
+        <fieldset class="form-donuts__fieldset form-donuts__fieldset_email" id="form-donuts__fieldset_email">
           <input  class="form-donuts__email-input"
                   name="form-donuts__email-input"
                   id="form-donuts__email-input"
@@ -393,8 +393,8 @@
                   type="email"
                   required>
         </fieldset>
-        <h3 class="form-donuts__fieldset-lable form-donuts__fieldset-lable_pay-way-choose">способ оплаты</h3>
-        <fieldset class="form-donuts__fieldset form-donuts__fieldset_pay-way-choose">
+        <label for="form-donuts__fieldset_pay-way-choose" class="form-donuts__fieldset-lable form-donuts__fieldset-lable_pay-way-choose">способ оплаты</label>
+        <fieldset class="form-donuts__fieldset form-donuts__fieldset_pay-way-choose" id="form-donuts__fieldset_pay-way-choose">
           <div class="form-donuts__radio-container">
             <input type="radio"
                    class="form-donuts__radio-button"
@@ -415,12 +415,12 @@
         </fieldset>
         <fieldset class="form-donuts__fieldset form-donuts__fieldset_disclaimer">
           <p class="form-donuts__disclaimer">
-            Нажимая кнопку &laquo;пожертвовать&raquo; вы&nbsp;соглашаетесь с&nbsp;условиями <a href="" class="form-donuts__disclaimer-link">оферты</a>,
-            <a href="" class="form-donuts__disclaimer-link">политики</a> в&nbsp;отношении обработки и&nbsp;защиты персональных данных и&nbsp;даёте
-            <a href="" class="form-donuts__disclaimer-link">согласие</a> на&nbsp;их&nbsp;обработку
+            Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <a href="" class="form-donuts__disclaimer-link">оферты</a>,
+            <a href="" class="form-donuts__disclaimer-link">политики</a> в отношении обработки и защиты персональных данных и даёте
+            <a href="" class="form-donuts__disclaimer-link">согласие</a> на их обработку
           </p>
         </fieldset>
-        <button type="submit" class="form-donuts__submit-button">перейти к&nbsp;оплате</button>
+        <button type="submit" class="form-donuts__submit-button">перейти к оплате</button>
       </form>
     </div>
   </section>

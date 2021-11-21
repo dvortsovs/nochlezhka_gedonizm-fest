@@ -1,9 +1,0 @@
-.partenrs__logo_type_gallery {
-  background-image: url('../../../../images/gallery_logo.svg');
-}
-
-@media screen and (max-width: 990px) {
-  .partenrs__logo_type_gallery {
-    background-image: url('../../../../images/gallery_logo_black.png'); /* has white background */
-  }
-}

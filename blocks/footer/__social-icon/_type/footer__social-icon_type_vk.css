@@ -1,0 +1,9 @@
+.footer__social-icon_type_vk {
+  background-image: url('../../../../images/VK.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__social-icon_type_vk:hover {
+  background-image: url('../../../../images/vk_hover.svg');
+}

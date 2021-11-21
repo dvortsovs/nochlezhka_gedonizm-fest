@@ -1,6 +1,7 @@
 .first-screen__know-more {
   margin: 0;
-  margin: 110px 0 8px 0;
+  /* margin: calc((100vh - 88px) * 0.145) 0 8px 0; */
+  margin: auto 0 8px 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -9,7 +10,8 @@
 
 @media screen and (max-width: 850px) {
   .first-screen__know-more {
-    margin: 253px 0 8px 0;
+    /* margin: calc((100vh - 68px) * 0.388) 0 8px 0; */
+    margin: auto 0 8px 0;
     font-size: 16px;
     line-height: 20px;
   }

@@ -1,13 +1,17 @@
 .first-screen__logo {
-  width: 315px;
-  height: 228px;
-  margin-top: 266px;
+  width: calc((100vh - 88px) * 0.415);
+  height: calc((100vh - 88px) * 0.3);
+  max-height: 228px;
+  /* margin-top: calc((100vh - 88px) * 0.35); */
+  margin-top: auto;
 }
 
 @media screen and (max-width: 850px) {
   .first-screen__logo {
-    width: 210px;
-    height: 152px;
-    margin-top: 175px;
+    width: calc((100vh - 68px) * 0.322);
+    height: calc((100vh - 68px) * 0.233);
+    max-height: 152px;
+    /* margin-top: calc((100vh - 68px) * 0.268); */
+    margin-top: auto;
   }
 }

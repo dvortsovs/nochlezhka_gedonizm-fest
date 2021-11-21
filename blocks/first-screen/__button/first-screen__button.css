@@ -5,8 +5,13 @@
   border: none;
   border-radius: 100px;
   margin: 0;
-  padding: 0;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .3s ease-in-out;
+}
+
+.first-screen__button:hover {
+  background-color: #5100B8;
 }
