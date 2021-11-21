@@ -14,25 +14,26 @@ const headerBurger = container.querySelector('.header__burger');
 const popupNavCityChooseBtn = container.querySelector('.popup-nav__city-choose-btn');
 const popupCitiesBackspaceBtn = container.querySelector('.popup-cities__backspace-btn');
 const popupCitiesCityArr = container.querySelectorAll('.popup-cities__city');
-const popupNavCity =container.querySelector('.popup-nav__city');
+const popupNavCity = container.querySelector('.popup-nav__city');
 const headerLocation = container.querySelector('.header__location');
 const popupCitiesCityChooseBtnArr = container.querySelectorAll('.popup-cities__city-choose-btn');
 const popupCitiesCityMarkerArr = container.querySelectorAll('.popup-cities__city-marker');
 
 function firstScreenButtonClick() {
-  about.scrollIntoView({behavior: "smooth", block: "start"});
+  about.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 firstScreenButton.addEventListener('click', firstScreenButtonClick);
 
-photosListItemsArr.forEach(function (currentValue, index){
-  currentValue.addEventListener('click',  function(){
-    if (index === photosListItemsArr.length - 1 ){
+photosListItemsArr.forEach(function (currentValue, index) {
+  currentValue.addEventListener('click', function () {
+    if (index === photosListItemsArr.length - 1) {
       currentValue.classList.remove('photos__list-item_active');
       photosListItemsArr[0].classList.add('photos__list-item_active');
       dotsScrollDotArr[index].classList.remove('dots-scroll__dot_active');
       dotsScrollDotArr[0].classList.add('dots-scroll__dot_active');
-    }else{
+    }
+    else {
       currentValue.classList.remove('photos__list-item_active');
       photosListItemsArr[index + 1].classList.add('photos__list-item_active');
       dotsScrollDotArr[index].classList.remove('dots-scroll__dot_active');
@@ -54,11 +55,11 @@ dotsScrollDotArr.forEach(function (currentValue, index) {
 
 /*Настраиваем закраску кнопок с суммами*/
 
-formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
+formDonutsBtnDonutSum.forEach(function (currentValue, index, currentArray) {
   currentArray[index].addEventListener('click', function () {
-    if (container.querySelector('.form-donuts__button-donut-sum_checked') === null){
+    if (container.querySelector('.form-donuts__button-donut-sum_checked') === null) {
       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
-    }else {
+    } else {
       container.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
     }
@@ -66,11 +67,11 @@ formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
 })
 
 /*Декларируем функцию открытия и закрытия*/
-function popupOpen(popupObject){
+function popupOpen(popupObject) {
   popupObject.classList.add(`popup_opened`);
 }
 
-function popupClose(popupObject){
+function popupClose(popupObject) {
   popupObject.classList.remove(`popup_opened`);
 }
 
@@ -81,42 +82,42 @@ function popupToggle(popupObject){
 /*Вешаем лиссенеры на элементы открытия и закрытия popups*/
 /*Popup с формой пожертвования*/
 
-headerSupportBtn.addEventListener('click', function (){
+headerSupportBtn.addEventListener('click', function () {
   popupOpen(popupTypeDonuts);
 });
 
-popupNavDonateBtn.addEventListener('click', function (){
+popupNavDonateBtn.addEventListener('click', function () {
   popupOpen(popupTypeDonuts);
 });
 
-popupBtnClose.addEventListener('click', function (){
+popupBtnClose.addEventListener('click', function () {
   popupClose(popupTypeDonuts);
 });
 
 /*Popup с меню и городами*/
 
-headerBurger.addEventListener('click', function (){
+headerBurger.addEventListener('click', function () {
   popupNav.classList.toggle('popup-nav_opened');
 });
 
-popupNavCityChooseBtn.addEventListener('click', function (){
+popupNavCityChooseBtn.addEventListener('click', function () {
   popupCities.classList.toggle('popup-cities_opened');
 });
 
-popupCitiesBackspaceBtn.addEventListener('click', function (){
+popupCitiesBackspaceBtn.addEventListener('click', function () {
   popupCities.classList.toggle('popup-cities_opened');
 });
 
-headerLocation.addEventListener('click', function (){
+headerLocation.addEventListener('click', function () {
   popupCities.classList.toggle('popup-cities_opened');
 });
 
 
-popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
-  currentArray[index].addEventListener('click',  function(){
-    if (container.querySelector('.popup-cities__city-marker_active') === null){
+popupCitiesCityChooseBtnArr.forEach(function (currentValue, index, currentArray) {
+  currentArray[index].addEventListener('click', function () {
+    if (container.querySelector('.popup-cities__city-marker_active') === null) {
       popupCitiesCityMarkerArr[index].classList.toggle('popup-cities__city-marker_active');
-    }else {
+    } else {
       container.querySelector('.popup-cities__city-marker_active').classList.toggle('popup-cities__city-marker_active');
       popupCitiesCityMarkerArr[index].classList.toggle('popup-cities__city-marker_active');
     }
