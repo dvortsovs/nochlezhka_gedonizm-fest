@@ -22,6 +22,7 @@
 @import url('../blocks/header/__support-btn/header__support-btn.css');
 @import url('../blocks/header/__like-logo/header__like-logo.css');
 @import url('../blocks/header/__burger/header__burger.css');
+@import url('../blocks/header/_fixed/header_fixed.css');
 
 /* First Screen */
 @import url('../blocks/first-screen/first-screen.css');
@@ -113,6 +114,32 @@
 @import url('../blocks/dots-scroll/dots-scroll.css');
 @import url('../blocks/dots-scroll/__dot/dots-scroll__dot.css');
 @import url('../blocks/dots-scroll/__dot/_active/dots-scroll__dot_active.css');
+/* popup c Меню */
+@import url(../blocks/popup-nav/popup-nav.css);
+@import url(../blocks/popup-nav/__lable/popup-nav__lable.css);
+@import url(../blocks/popup-nav/__city-choose-btn/popup-nav__city-choose-btn.css);
+@import url(../blocks/popup-nav/__city/popup-nav__city.css);
+@import url(../blocks/popup-nav/__city-list/popup-nav__city-list.css);
+@import url(../blocks/popup-nav/__lable/_nav-menu/popup-nav__lable_nav-menu.css);
+@import url(../blocks/popup-nav/__nav-list/popup-nav__nav-list.css);
+@import url(../blocks/popup-nav/__nav-list-item/popup-nav__nav-list-item.css);
+@import url(../blocks/popup-nav/__nav-link/popup-nav__nav-link.css);
+@import url(../blocks/popup-nav/__org-link/popup-nav__org-link.css);
+@import url(../blocks/popup-nav/__org-logo/popup-nav__org-logo.css);
+@import url(../blocks/popup-nav/__org-description/popup-nav__org-description.css);
+@import url(../blocks/popup-nav/__donate-btn/popup-nav__donate-btn.css);
+/* popup c городами */
+@import url(../blocks/popup-cities/popup-cities.css);
+@import url(../blocks/popup-cities/__backspace-btn/popup-cities__backspace-btn.css);
+@import url(../blocks/popup-cities/__backspace-arrow/popup-cities__backspace-arrow.css);
+@import url(../blocks/popup-cities/__backspace/popup-cities__backspace.css);
+@import url(../blocks/popup-cities/__lable/popup-cities__lable.css);
+@import url(../blocks/popup-cities/__list/popup-cities__list.css);
+@import url(../blocks/popup-cities/__list-item/popup-cities__list-item.css);
+@import url(../blocks/popup-cities/__city-choose-btn/popup-cities__city-choose-btn.css);
+@import url(../blocks/popup-cities/__city/popup-cities__city.css);
+@import url(../blocks/popup-cities/__city-marker/popup-cities__city-marker.css);
+@import url(../blocks/popup-cities/__city-marker/_active/popup-cities__city-marker_active.css);
 /* Donuts popup */
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
@@ -135,31 +162,3 @@
 @import url(../blocks/popup/__disclaimer/form-donuts__disclaimer.css);
 @import url(../blocks/popup/__disclaimer-link/form-donuts__disclaimer-link.css);
 @import url(../blocks/popup/__submit-button/form-donuts__submit-button.css);
-/* popup c Меню */
-@import url(../blocks/popup-nav/popup-nav.css);
-@import url(../blocks/popup-nav/__lable/popup-nav__lable.css);
-@import url(../blocks/popup-nav/__city-choose-btn/popup-nav__city-choose-btn.css);
-@import url(../blocks/popup-nav/__city/popup-nav__city.css);
-@import url(../blocks/popup-nav/__city-list/popup-nav__city-list.css);
-@import url(../blocks/popup-nav/__lable/_nav-menu/popup-nav__lable_nav-menu.css);
-@import url(../blocks/popup-nav/__nav-list/popup-nav__nav-list.css);
-@import url(../blocks/popup-nav/__nav-list-item/popup-nav__nav-list-item.css);
-@import url(../blocks/popup-nav/__nav-link/popup-nav__nav-link.css);
-@import url(../blocks/popup-nav/__org-link/popup-nav__org-link.css);
-@import url(../blocks/popup-nav/__org-logo/popup-nav__org-logo.css);
-@import url(../blocks/popup-nav/__org-description/popup-nav__org-description.css);
-@import url(../blocks/popup-nav/__donate-btn/popup-nav__donate-btn.css);
-@import url(../blocks/popup-nav/_opened/popup-nav_opened.css);
-/* popup c городами */
-@import url(../blocks/popup-cities/popup-cities.css);
-@import url(../blocks/popup-cities/__backspace-btn/popup-cities__backspace-btn.css);
-@import url(../blocks/popup-cities/__backspace-arrow/popup-cities__backspace-arrow.css);
-@import url(../blocks/popup-cities/__backspace/popup-cities__backspace.css);
-@import url(../blocks/popup-cities/__lable/popup-cities__lable.css);
-@import url(../blocks/popup-cities/__list/popup-cities__list.css);
-@import url(../blocks/popup-cities/__list-item/popup-cities__list-item.css);
-@import url(../blocks/popup-cities/__city-choose-btn/popup-cities__city-choose-btn.css);
-@import url(../blocks/popup-cities/__city/popup-cities__city.css);
-@import url(../blocks/popup-cities/__city-marker/popup-cities__city-marker.css);
-@import url(../blocks/popup-cities/__city-marker/_active/popup-cities__city-marker_active.css);
-@import url(../blocks/popup-cities/_opened/popup-cities_opened.css);
