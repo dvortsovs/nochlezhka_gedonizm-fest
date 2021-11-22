@@ -3,7 +3,7 @@ const about = document.querySelector('.about');
 const swiper = document.querySelector('.swiper');
 
 function firstScreenButtonClick() {
-  about.scrollIntoView({behavior: "smooth", block: "start"});
+  about.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 firstScreenButton.addEventListener('click', firstScreenButtonClick);
@@ -13,8 +13,8 @@ if (document.documentElement.clientWidth < 400) {
     loop: true,
 
     pagination: {
-        el: '.swiper-pagination',
-        clicable: true,
+      el: '.swiper-pagination',
+      clicable: true,
     },
     breakpoints: {
       400: {
@@ -27,9 +27,7 @@ if (document.documentElement.clientWidth < 400) {
 
 if (document.documentElement.clientWidth > 400) {
   const swiperSlide = swiper.querySelectorAll('.swiper-slide');
-  console.log(swiperSlide);
   const swiperWrapper = swiper.querySelector('.swiper-wrapper');
-  console.log(swiperWrapper);
   swiperSlide.forEach((currentValue) => {
     currentValue.classList.remove('swiper-slide');
   })
@@ -37,29 +35,14 @@ if (document.documentElement.clientWidth > 400) {
   swiper.classList.remove('swiper');
 
 }
-
-/*Настраиваем закраску кнопок с суммами*/
-// const formDonutsBtnDonutSum = document.querySelectorAll('.form-donuts__button-donut-sum');
-
-// formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
-//   currentArray[index].addEventListener('click', function () {
-//     if (document.querySelector('.form-donuts__button-donut-sum_checked') === null){
-//       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
-//     }else {
-//       document.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
-//       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
-//     }
-//   });
-// })
-
 /*------------------------------------Блок функций открытия/закрытия popups-------------------------------------*/
 /*Декларируем функцию открытия*/
-function popupOpen(popupObject){
+function popupOpen(popupObject) {
   popupObject.classList.add(`popup_opened`);
 }
 
 /*Декларируем функцию закрытия*/
-function popupClose(popupObject){
+function popupClose(popupObject) {
   popupObject.classList.remove(`popup_opened`);
 }
 
@@ -73,26 +56,26 @@ const headerSupportBtn = document.querySelector('.header__support-btn');
 const popupNavDonateBtn = document.querySelector('.popup-nav__donate-btn');
 
 /*Вешаем лиссененры на определённые ранее кнопки*/
-headerSupportBtn.addEventListener('click', function (){
+headerSupportBtn.addEventListener('click', function () {
   popupOpen(popupTypeDonuts);
 });
 
-popupNavDonateBtn.addEventListener('click', function (){
+popupNavDonateBtn.addEventListener('click', function () {
   popupOpen(popupTypeDonuts);
 });
 
-popupBtnClose.addEventListener('click', function (){
+popupBtnClose.addEventListener('click', function () {
   popupClose(popupTypeDonuts);
 });
 
 /*Дополнительно Настраиваем закраску кнопок с суммами после нажатия*/
 const formDonutsBtnDonutSum = document.querySelectorAll('.form-donuts__button-donut-sum');
 
-formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
+formDonutsBtnDonutSum.forEach(function (currentValue, index, currentArray) {
   currentArray[index].addEventListener('click', function () {
-    if (document.querySelector('.form-donuts__button-donut-sum_checked') === null){
+    if (document.querySelector('.form-donuts__button-donut-sum_checked') === null) {
       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
-    }else {
+    } else {
       document.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
     }
@@ -104,12 +87,12 @@ formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
 const mainHeader = document.querySelector('.header');
 
 /*Декларируем функцию закрепления header*/
-function headerFixed(){
+function headerFixed() {
   mainHeader.classList.add(`header_fixed`);
 }
 
 /*Декларируем функцию закрытия*/
-function headerFloat(){
+function headerFloat() {
   mainHeader.classList.remove(`header_fixed`);
 }
 
@@ -122,12 +105,12 @@ const popupNav = document.querySelector('.popup-nav');
 const headerBurger = document.querySelector('.header__burger'); /*бургер*/
 
 /*Вешаем лиссененры на определённые ранее кнопки*/
-headerBurger.addEventListener('click', function (){
-  if (popupNav.classList.contains('popup_opened')){
+headerBurger.addEventListener('click', function () {
+  if (popupNav.classList.contains('popup_opened')) {
     popupClose(popupNav);
     popupClose(popupCities);
     headerFloat();
-  }else{
+  } else {
     popupOpen(popupNav);
     headerFixed();
   }
@@ -143,31 +126,31 @@ const popupNavCityChooseBtn = document.querySelector('.popup-nav__city-choose-bt
 const popupCitiesBackspaceBtn = document.querySelector('.popup-cities__backspace-btn');
 
 /*Вешаем лиссененры на определённые ранее кнопки*/
-headerLocation.addEventListener('click', function (){
-  if (popupCities.classList.contains('popup_opened')){
+headerLocation.addEventListener('click', function () {
+  if (popupCities.classList.contains('popup_opened')) {
     popupClose(popupCities);
     headerFloat();
-  }else{
+  } else {
     popupOpen(popupCities);
     headerFixed();
   }
 });
 
-popupNavCityChooseBtn.addEventListener('click', function (){
-  if (popupCities.classList.contains('popup_opened')){
+popupNavCityChooseBtn.addEventListener('click', function () {
+  if (popupCities.classList.contains('popup_opened')) {
     popupClose(popupCities);
     headerFloat();
-  }else{
+  } else {
     popupOpen(popupCities);
     headerFixed();
   }
 });
 
-popupCitiesBackspaceBtn.addEventListener('click', function (){
-  if (popupCities.classList.contains('popup_opened')){
+popupCitiesBackspaceBtn.addEventListener('click', function () {
+  if (popupCities.classList.contains('popup_opened')) {
     popupClose(popupCities);
     headerFloat();
-  }else{
+  } else {
     popupOpen(popupCities);
     headerFixed();
   }
@@ -181,11 +164,11 @@ const popupCitiesCityChooseBtnArr = document.querySelectorAll('.popup-cities__ci
 const popupNavCity = document.querySelector('.popup-nav__city');
 
 /*Вешаем лиссененры на определённые ранее кнопки переключения городов*/
-popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
-  currentArray[index].addEventListener('click',  function(){
-    if (document.querySelector('.popup-cities_city-choose-btn_active') === null){
+popupCitiesCityChooseBtnArr.forEach(function (currentValue, index, currentArray) {
+  currentArray[index].addEventListener('click', function () {
+    if (document.querySelector('.popup-cities_city-choose-btn_active') === null) {
       popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
-    }else {
+    } else {
       document.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
       popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
     }
