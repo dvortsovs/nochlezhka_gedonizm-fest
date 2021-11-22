@@ -206,42 +206,37 @@
         <a href="#" class="get-action__link link link_with-border">стать участником</a>
       </div>
     </section>
-    <section class="photos">
+    <section class="photos swiper">
       <h2 class="photos__hashtag">#hedonismfest</h2>
       <p class="photos__subtitle">Ставь хештег и попади в ленту на сайте</p>
-      <ul class="photos__list">
+      <ul class="photos__list swiper-wrapper">
         <li class="
               photos__list-item
               photos__list-item_grid-area_big
               photos__list-item_active
+              swiper-slide
             ">
           <img src="blocks/photos/__photo/images/image_big.jpg"
             alt="Портретное фото Девушки со стаканом апельсинового сока" class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_first">
+        <li class="photos__list-item photos__list-item_grid-area_first swiper-slide">
           <img src="blocks/photos/__photo/images/image_first.jpg" alt="Пикник в парке" class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_second">
+        <li class="photos__list-item photos__list-item_grid-area_second swiper-slide">
           <img src="blocks/photos/__photo/images/image_second.jpg" alt="Чёкающиеся бокалы с коктейлями"
             class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_third">
+        <li class="photos__list-item photos__list-item_grid-area_third swiper-slide">
           <img src="blocks/photos/__photo/images/image_third.jpg" alt="Женщина смотрит на картины"
             class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_fourth">
+        <li class="photos__list-item photos__list-item_grid-area_fourth swiper-slide">
           <img src="blocks/photos/__photo/images/image_fourth.jpg" alt="Люди пьют напитки на фоне стены с графити"
             class="photos__photo">
         </li>
       </ul>
+      <div class="swiper-pagination"></div>
     </section>
-    <div class="dots-scroll">
-      <div class="dots-scroll__dot dots-scroll__dot_active"></div>
-      <div class="dots-scroll__dot"></div>
-      <div class="dots-scroll__dot"></div>
-      <div class="dots-scroll__dot"></div>
-      <div class="dots-scroll__dot"></div>
-    </div>
     <section class="partners">
       <h2 class="partners__title">Уже в команде</h2>
       <div class="partners__container">
@@ -458,7 +453,8 @@
     </div>
   </section>
   <!--Зона скриптов------------------------------------------------------------------------>
-  <script src="scripts/smoothscroll.min.js"></script>
+  <script src="./scripts/swiper.js"></script>
+  <script src="./scripts/smoothscroll.min.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 
