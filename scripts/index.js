@@ -140,10 +140,9 @@ function popupNavCityChooseBtnActive(btn){
 function markedCity(cityBtnArr){
   popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
     if (currentArray[index].textContent === popupNavCity.textContent){
-      if (currentArray[index].contains('popup-cities_city-choose-btn_active')) {
+      if (currentArray[index].classList.contains('popup-cities_city-choose-btn_active')){
         return
       }else {
-        alert(currentArray[index]);
         popupNavCityChooseBtnActive(currentArray[index]);
       }
     }
@@ -200,7 +199,7 @@ popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray )
       document.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
       popupNavCityChooseBtnActive(currentArray[index]);
     }
-    popupNavCity.textContent = popupCitiesCityChooseBtnArr[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
-    headerLocation.textContent = popupCitiesCityChooseBtnArr[index].textContent /*присваиваем выбранное значение полю города в header*/;
+    popupNavCity.textContent = currentArray[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
+    headerLocation.textContent = currentArray[index].textContent /*присваиваем выбранное значение полю города в header*/;
   });
 })
