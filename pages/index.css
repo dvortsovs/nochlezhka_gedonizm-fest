@@ -61,6 +61,7 @@
 @import url('../blocks/events/__progress-container/events__progress-container.css');
 @import url('../blocks/events/__progress-bar/events__progress-bar.css');
 @import url('../blocks/events/__look-events/events__look-events.css');
+
 /* Cards */
 @import url('../blocks/cards/cards.css');
 @import url('../blocks/card/card.css');
@@ -112,10 +113,32 @@
 @import url('../blocks/photos/__list-item/_grid-area/photos__list-item_grid-area_fourth.css');
 @import url('../blocks/photos/__list-item/_active/photos__list-item_active.css');
 @import url('../blocks/photos/__photo/photos__photo.css');
-/* Doted Scroll */
-@import url('../blocks/dots-scroll/dots-scroll.css');
-@import url('../blocks/dots-scroll/__dot/dots-scroll__dot.css');
-@import url('../blocks/dots-scroll/__dot/_active/dots-scroll__dot_active.css');
+@import url('../blocks/swiper/swiper.css');
+@import url('../blocks/swiper/swiper-pagination/swiper-pagination.css');
+
+/* Donuts popup */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__header-container/popup__header-container.css);
+@import url(../blocks/popup/__header/popup__header.css);
+@import url(../blocks/popup/__button-close/popup__button-close.css);
+@import url(../blocks/popup/__fieldset-lable/form-donuts__fieldset-lable.css);
+@import url(../blocks/popup/__fieldset-lable/_sum-choose/form-donuts__fieldset-lable_sum-choose.css);
+@import url(../blocks/popup/__fieldset-lable/_pay-way-choose/form-donuts__fieldset-lable_pay-way-choose.css);
+@import url(../blocks/popup/__fieldset/form-donuts__fieldset.css);
+@import url(../blocks/popup/__fieldset/_sum-choose/form-donuts__fieldset_sum-choose.css);
+@import url(../blocks/popup/__fieldset/_email/form-donuts__fieldset_email.css);
+@import url(../blocks/popup/__button-donut-sum/form-donuts__button-donut-sum.css);
+@import url(../blocks/popup/__button-donut-sum/_checked/form-donuts__button-donut-sum_checked.css);
+@import url(../blocks/popup/__another-sum-input/form-donuts__another-sum-input.css);
+@import url(../blocks/popup/__email-input/form-donuts__email-input.css);
+@import url(../blocks/popup/__fieldset/_pay-way-choose/form-donuts__fieldset_pay-way-choose.css);
+@import url(../blocks/popup/__radio-container/form-donuts__radio-container.css);
+@import url(../blocks/popup/__disclaimer/form-donuts__disclaimer.css);
+@import url(../blocks/popup/__disclaimer-link/form-donuts__disclaimer-link.css);
+@import url(../blocks/popup/__submit-button/form-donuts__submit-button.css);
+
 /* popup c Меню */
 @import url(../blocks/popup-nav/popup-nav.css);
 @import url(../blocks/popup-nav/__lable/popup-nav__lable.css);
@@ -130,6 +153,8 @@
 @import url(../blocks/popup-nav/__org-logo/popup-nav__org-logo.css);
 @import url(../blocks/popup-nav/__org-description/popup-nav__org-description.css);
 @import url(../blocks/popup-nav/__donate-btn/popup-nav__donate-btn.css);
+@import url(../blocks/popup-nav/_opened/popup-nav_opened.css);
+
 /* popup c городами */
 @import url(../blocks/popup-cities/popup-cities.css);
 @import url(../blocks/popup-cities/__backspace-btn/popup-cities__backspace-btn.css);

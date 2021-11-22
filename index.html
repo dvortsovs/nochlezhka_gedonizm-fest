@@ -2,10 +2,11 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./pages/index.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+
   <title>Gedonizm-fest</title>
 </head>
 
@@ -49,7 +50,6 @@
         <p class="about__text">Целую неделю 26 апреля — 2 мая
           вся выручка будет перечислена в пользу бездомных.</p>
         <a href="#" class="about__link">узнать подробнее</a>
-
       </div>
     </section>
 
@@ -178,49 +178,44 @@
         <h2 class="get-action__title">примите акцию у себя</h2>
         <p class="get-action__text">Кто может принять участие в акции?</p>
         <p class="get-action__text">
-          Абсолютно все. Продавайте кофе в&nbsp;своем кафе, устройте мастер-класс по&nbsp;вязанию или соберите друзей у&nbsp;себя дома.
-          Помогать просто, узнайте подробности и&nbsp;заполните форму</p>
-        <a href="#" class="get-action__link">стать участником</a>
+          Абсолютно все. Продавайте кофе в&nbsp;своем кафе, устройте
+          мастер-класс по&nbsp;вязанию или соберите друзей у&nbsp;себя дома.
+          Помогать просто, узнайте подробности и&nbsp;заполните форму
+        </p>
+        <a href="#" class="get-action__link link link_with-border">стать участником</a>
       </div>
     </section>
-    <section class="photos">
+    <section class="photos swiper">
       <h2 class="photos__hashtag">#hedonismfest</h2>
       <p class="photos__subtitle">Ставь хештег и попади в ленту на сайте</p>
-      <ul class="photos__list">
-        <li class="photos__list-item photos__list-item_grid-area_big photos__list-item_active">
+      <ul class="photos__list swiper-wrapper">
+        <li class="
+              photos__list-item
+              photos__list-item_grid-area_big
+              photos__list-item_active
+              swiper-slide
+            ">
           <img src="blocks/photos/__photo/images/image_big.jpg"
-               alt="Портретное фото Девушки со стаканом апельсинового сока"
-               class="photos__photo">
+            alt="Портретное фото Девушки со стаканом апельсинового сока" class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_first">
-          <img src="blocks/photos/__photo/images/image_first.jpg"
-               alt="Пикник в парке"
-               class="photos__photo">
+        <li class="photos__list-item photos__list-item_grid-area_first swiper-slide">
+          <img src="blocks/photos/__photo/images/image_first.jpg" alt="Пикник в парке" class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_second">
-          <img src="blocks/photos/__photo/images/image_second.jpg"
-               alt="Чёкающиеся бокалы с коктейлями"
-               class="photos__photo">
+        <li class="photos__list-item photos__list-item_grid-area_second swiper-slide">
+          <img src="blocks/photos/__photo/images/image_second.jpg" alt="Чёкающиеся бокалы с коктейлями"
+            class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_third">
-          <img src="blocks/photos/__photo/images/image_third.jpg"
-               alt="Женщина смотрит на картины"
-               class="photos__photo">
+        <li class="photos__list-item photos__list-item_grid-area_third swiper-slide">
+          <img src="blocks/photos/__photo/images/image_third.jpg" alt="Женщина смотрит на картины"
+            class="photos__photo">
         </li>
-        <li class="photos__list-item photos__list-item_grid-area_fourth">
-          <img src="blocks/photos/__photo/images/image_fourth.jpg"
-               alt="Люди пьют напитки на фоне стены с графити"
-               class="photos__photo">
+        <li class="photos__list-item photos__list-item_grid-area_fourth swiper-slide">
+          <img src="blocks/photos/__photo/images/image_fourth.jpg" alt="Люди пьют напитки на фоне стены с графити"
+            class="photos__photo">
         </li>
       </ul>
+      <div class="swiper-pagination"></div>
     </section>
-    <ul class="dots-scroll">
-      <li class="dots-scroll__dot dots-scroll__dot_active"></li>
-      <li class="dots-scroll__dot"></li>
-      <li class="dots-scroll__dot"></li>
-      <li class="dots-scroll__dot"></li>
-      <li class="dots-scroll__dot"></li>
-    </ul>
     <section class="partners">
       <h2 class="partners__title">Уже в команде</h2>
       <div class="partners__container">
@@ -400,6 +395,7 @@
         </fieldset>
         <fieldset class="form-donuts__fieldset form-donuts__fieldset_disclaimer">
           <p class="form-donuts__disclaimer">
+
             Нажимая кнопку &laquo;пожертвовать&raquo; вы&nbsp;соглашаетесь с&nbsp;условиями <a href="" class="form-donuts__disclaimer-link">оферты</a>,
             <a href="" class="form-donuts__disclaimer-link">политики</a> в&nbsp;отношении обработки и&nbsp;защиты персональных данных и&nbsp;даёте
             <a href="" class="form-donuts__disclaimer-link">согласие</a> на&nbsp;их&nbsp;обработку
@@ -410,6 +406,8 @@
     </div>
   </section>
   <!--Зона скриптов------------------------------------------------------------------------>
+  <script src="./scripts/swiper.js"></script>
+  <script src="./scripts/smoothscroll.min.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 
