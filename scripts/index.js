@@ -27,7 +27,9 @@ if (document.documentElement.clientWidth < 400) {
 
 if (document.documentElement.clientWidth > 400) {
   const swiperSlide = swiper.querySelectorAll('.swiper-slide');
+  console.log(swiperSlide);
   const swiperWrapper = swiper.querySelector('.swiper-wrapper');
+  console.log(swiperWrapper);
   swiperSlide.forEach((currentValue) => {
     currentValue.classList.remove('swiper-slide');
   })
@@ -37,18 +39,18 @@ if (document.documentElement.clientWidth > 400) {
 }
 
 /*Настраиваем закраску кнопок с суммами*/
-const formDonutsBtnDonutSum = document.querySelectorAll('.form-donuts__button-donut-sum');
+// const formDonutsBtnDonutSum = document.querySelectorAll('.form-donuts__button-donut-sum');
 
-formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
-  currentArray[index].addEventListener('click', function () {
-    if (document.querySelector('.form-donuts__button-donut-sum_checked') === null){
-      currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
-    }else {
-      document.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
-      currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
-    }
-  });
-})
+// formDonutsBtnDonutSum.forEach(function (currentValue, index,currentArray ) {
+//   currentArray[index].addEventListener('click', function () {
+//     if (document.querySelector('.form-donuts__button-donut-sum_checked') === null){
+//       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
+//     }else {
+//       document.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
+//       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
+//     }
+//   });
+// })
 
 /*------------------------------------Блок функций открытия/закрытия popups-------------------------------------*/
 /*Декларируем функцию открытия*/
