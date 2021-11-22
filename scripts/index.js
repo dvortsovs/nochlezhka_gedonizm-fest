@@ -1,6 +1,7 @@
-const firstScreenButton = document.querySelector('.first-screen__button');
-const about = document.querySelector('.about');
-const swiper = document.querySelector('.swiper');
+const page = document.querySelector('.page');
+const firstScreenButton = page.querySelector('.first-screen__button');
+const about = page.querySelector('.about');
+const swiper = page.querySelector('.swiper');
 
 function firstScreenButtonClick() {
   about.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -48,12 +49,12 @@ function popupClose(popupObject) {
 
 /*------------------------------------Блок работы с popup пожертвований-------------------------------------*/
 /*Записываем popup в переменную*/
-const popupTypeDonuts = document.querySelector('.popup_type_donuts');
+const popupTypeDonuts = page.querySelector('.popup_type_donuts');
 
 /*Записываем кнопки открытия/закрытия popup в переменные*/
-const popupBtnClose = document.querySelector('.popup__button-close');
-const headerSupportBtn = document.querySelector('.header__support-btn');
-const popupNavDonateBtn = document.querySelector('.popup-nav__donate-btn');
+const popupBtnClose = page.querySelector('.popup__button-close');
+const headerSupportBtn = page.querySelector('.header__support-btn');
+const popupNavDonateBtn = page.querySelector('.popup-nav__donate-btn');
 
 /*Вешаем лиссененры на определённые ранее кнопки*/
 headerSupportBtn.addEventListener('click', function () {
@@ -69,14 +70,14 @@ popupBtnClose.addEventListener('click', function () {
 });
 
 /*Дополнительно Настраиваем закраску кнопок с суммами после нажатия*/
-const formDonutsBtnDonutSum = document.querySelectorAll('.form-donuts__button-donut-sum');
+const formDonutsBtnDonutSum = page.querySelectorAll('.form-donuts__button-donut-sum');
 
 formDonutsBtnDonutSum.forEach(function (currentValue, index, currentArray) {
   currentArray[index].addEventListener('click', function () {
-    if (document.querySelector('.form-donuts__button-donut-sum_checked') === null) {
+    if (page.querySelector('.form-donuts__button-donut-sum_checked') === null) {
       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
     } else {
-      document.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
+      page.querySelector('.form-donuts__button-donut-sum_checked').classList.toggle('form-donuts__button-donut-sum_checked');
       currentArray[index].classList.toggle('form-donuts__button-donut-sum_checked');
     }
   });
@@ -84,7 +85,7 @@ formDonutsBtnDonutSum.forEach(function (currentValue, index, currentArray) {
 
 /*------------------------------------Блок работы с header-------------------------------------*/
 /*Записываем header в переменную*/
-const mainHeader = document.querySelector('.header');
+const mainHeader = page.querySelector('.header');
 
 /*Декларируем функцию закрепления header*/
 function headerFixed() {
@@ -99,10 +100,10 @@ function headerFloat() {
 
 /*------------------------------------Блок работы с popup навигации-------------------------------------*/
 /*Записываем popup в переменную*/
-const popupNav = document.querySelector('.popup-nav');
+const popupNav = page.querySelector('.popup-nav');
 
 /*Записываем кнопки открытия/закрытия popup в переменные*/
-const headerBurger = document.querySelector('.header__burger'); /*бургер*/
+const headerBurger = page.querySelector('.header__burger'); /*бургер*/
 
 /*Вешаем лиссененры на определённые ранее кнопки*/
 headerBurger.addEventListener('click', function () {
@@ -118,12 +119,12 @@ headerBurger.addEventListener('click', function () {
 
 /*------------------------------------Блок работы с popup выбора города-------------------------------------*/
 /*Записываем popup в переменную*/
-const popupCities = document.querySelector('.popup-cities');
+const popupCities = page.querySelector('.popup-cities');
 
 /*Записываем кнопки открытия/закрытия popup в переменные*/
-const headerLocation = document.querySelector('.header__location');  /*кнопка с названием города в header*/
-const popupNavCityChooseBtn = document.querySelector('.popup-nav__city-choose-btn'); /*кнопка с названием города в меню навигации*/
-const popupCitiesBackspaceBtn = document.querySelector('.popup-cities__backspace-btn');
+const headerLocation = page.querySelector('.header__location');  /*кнопка с названием города в header*/
+const popupNavCityChooseBtn = page.querySelector('.popup-nav__city-choose-btn'); /*кнопка с названием города в меню навигации*/
+const popupCitiesBackspaceBtn = page.querySelector('.popup-cities__backspace-btn');
 
 /*Объявляем функцию активации маркера выбранного города*/
 function popupNavCityChooseBtnActive(btn){
@@ -179,18 +180,18 @@ popupCitiesBackspaceBtn.addEventListener('click', function () {
 
 /*-----------------------------Блок работы со списком городов в popup выбора города-----------------------------*/
 /*Записываем в переменную массив кнопок переключения городов*/
-const popupCitiesCityChooseBtnArr = document.querySelectorAll('.popup-cities__city-choose-btn');
+const popupCitiesCityChooseBtnArr = page.querySelectorAll('.popup-cities__city-choose-btn');
 
 /*Записываем в переменную поле текущего города из popup навигации*/
-const popupNavCity = document.querySelector('.popup-nav__city');
+const popupNavCity = page.querySelector('.popup-nav__city');
 
 /*Вешаем лиссененры на определённые ранее кнопки переключения городов*/
 popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
   currentArray[index].addEventListener('click',  function(){
-    if (document.querySelector('.popup-cities_city-choose-btn_active') === null){
+    if (page.querySelector('.popup-cities_city-choose-btn_active') === null){
       popupNavCityChooseBtnActive(currentArray[index]);
     }else {
-      document.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
+      page.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
       popupNavCityChooseBtnActive(currentArray[index]);
     }
     popupNavCity.textContent = currentArray[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
