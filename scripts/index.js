@@ -166,11 +166,8 @@ popupCitiesBackspaceBtn.addEventListener('click', function (){
 /*Записываем в переменную массив кнопок переключения городов*/
 const popupCitiesCityChooseBtnArr = document.querySelectorAll('.popup-cities__city-choose-btn');
 
-/*Записываем в переменную массив названий городов*/
-const popupCitiesCityArr = document.querySelectorAll('.popup-cities__city');
-
 /*Записываем в переменную поле текущего города из popup навигации*/
-const popupNavCity = document.querySelectorAll('.popup-nav__city');
+const popupNavCity = document.querySelector('.popup-nav__city');
 
 /*Вешаем лиссененры на определённые ранее кнопки переключения городов*/
 popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
@@ -181,7 +178,7 @@ popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray )
       document.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
       popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
     }
-    popupNavCity.textContent = popupCitiesCityArr[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
-    headerLocation.textContent = popupCitiesCityArr[index].textContent /*присваиваем выбранное значение полю города в header*/;
+    popupNavCity.textContent = popupCitiesCityChooseBtnArr[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
+    headerLocation.textContent = popupCitiesCityChooseBtnArr[index].textContent /*присваиваем выбранное значение полю города в header*/;
   });
 })
