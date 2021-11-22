@@ -140,8 +140,7 @@
 @import url(../blocks/popup-cities/__list-item/popup-cities__list-item.css);
 @import url(../blocks/popup-cities/__city-choose-btn/popup-cities__city-choose-btn.css);
 @import url(../blocks/popup-cities/__city/popup-cities__city.css);
-@import url(../blocks/popup-cities/__city-marker/popup-cities__city-marker.css);
-@import url(../blocks/popup-cities/__city-marker/_active/popup-cities__city-marker_active.css);
+@import url(../blocks/popup-cities/__city-choose-btn/_active/popup-cities_city-choose-btn_active.css);
 /* Donuts popup */
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);

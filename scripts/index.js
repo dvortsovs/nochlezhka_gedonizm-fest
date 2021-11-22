@@ -166,9 +166,6 @@ popupCitiesBackspaceBtn.addEventListener('click', function (){
 /*Записываем в переменную массив кнопок переключения городов*/
 const popupCitiesCityChooseBtnArr = document.querySelectorAll('.popup-cities__city-choose-btn');
 
-/*Записываем в переменную массив маркеров выбранного города*/
-const popupCitiesCityMarkerArr = document.querySelectorAll('.popup-cities__city-marker');
-
 /*Записываем в переменную массив названий городов*/
 const popupCitiesCityArr = document.querySelectorAll('.popup-cities__city');
 
@@ -178,11 +175,11 @@ const popupNavCity = document.querySelectorAll('.popup-nav__city');
 /*Вешаем лиссененры на определённые ранее кнопки переключения городов*/
 popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
   currentArray[index].addEventListener('click',  function(){
-    if (document.querySelector('.popup-cities__city-marker_active') === null){
-      popupCitiesCityMarkerArr[index].classList.toggle('popup-cities__city-marker_active');
+    if (document.querySelector('.popup-cities_city-choose-btn_active') === null){
+      popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
     }else {
-      document.querySelector('.popup-cities__city-marker_active').classList.toggle('popup-cities__city-marker_active');
-      popupCitiesCityMarkerArr[index].classList.toggle('popup-cities__city-marker_active');
+      document.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
+      popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
     }
     popupNavCity.textContent = popupCitiesCityArr[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
     headerLocation.textContent = popupCitiesCityArr[index].textContent /*присваиваем выбранное значение полю города в header*/;
