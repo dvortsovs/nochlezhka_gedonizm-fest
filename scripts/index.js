@@ -131,14 +131,34 @@ const headerLocation = document.querySelector('.header__location');  /*кноп�
 const popupNavCityChooseBtn = document.querySelector('.popup-nav__city-choose-btn'); /*кнопка с названием города в меню навигации*/
 const popupCitiesBackspaceBtn = document.querySelector('.popup-cities__backspace-btn');
 
+/*Объявляем функцию активации маркера выбранного города*/
+function popupNavCityChooseBtnActive(btn){
+  btn.classList.toggle('popup-cities_city-choose-btn_active')
+}
+
+/*Объявляем функцию отметки текущего города в списке городов к выбору*/
+function markedCity(cityBtnArr){
+  popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
+    if (currentArray[index].textContent === popupNavCity.textContent){
+      if (currentArray[index].contains('popup-cities_city-choose-btn_active')) {
+        return
+      }else {
+        alert(currentArray[index]);
+        popupNavCityChooseBtnActive(currentArray[index]);
+      }
+    }
+  });
+}
+
 /*Вешаем лиссененры на определённые ранее кнопки*/
 headerLocation.addEventListener('click', function (){
   if (popupCities.classList.contains('popup_opened')){
     popupClose(popupCities);
-    headerFloat();
+    headerFloat(popupCitiesCityChooseBtnArr);
   }else{
     popupOpen(popupCities);
     headerFixed();
+    markedCity(popupNavCityChooseBtn);
   }
 });
 
@@ -149,6 +169,7 @@ popupNavCityChooseBtn.addEventListener('click', function (){
   }else{
     popupOpen(popupCities);
     headerFixed();
+    markedCity(popupCitiesCityChooseBtnArr);
   }
 });
 
@@ -159,6 +180,7 @@ popupCitiesBackspaceBtn.addEventListener('click', function (){
   }else{
     popupOpen(popupCities);
     headerFixed();
+    markedCity(popupCitiesCityChooseBtnArr);
   }
 });
 
@@ -173,10 +195,10 @@ const popupNavCity = document.querySelector('.popup-nav__city');
 popupCitiesCityChooseBtnArr.forEach(function (currentValue, index,currentArray ){
   currentArray[index].addEventListener('click',  function(){
     if (document.querySelector('.popup-cities_city-choose-btn_active') === null){
-      popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
+      popupNavCityChooseBtnActive(currentArray[index]);
     }else {
       document.querySelector('.popup-cities_city-choose-btn_active').classList.toggle('popup-cities_city-choose-btn_active');
-      popupCitiesCityChooseBtnArr[index].classList.toggle('popup-cities_city-choose-btn_active');
+      popupNavCityChooseBtnActive(currentArray[index]);
     }
     popupNavCity.textContent = popupCitiesCityChooseBtnArr[index].textContent; /*присваиваем выбранное значение полю города в popup навигации*/
     headerLocation.textContent = popupCitiesCityChooseBtnArr[index].textContent /*присваиваем выбранное значение полю города в header*/;
