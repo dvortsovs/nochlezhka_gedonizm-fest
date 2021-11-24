@@ -1,0 +1,10 @@
+.link_with-border {
+  padding: 10px 24px;
+  border: 2px solid #3B3748;
+  box-sizing: border-box;
+  border-radius: 26px;
+}
+
+.link_with-border:hover {
+  border-color: #5100B8;
+}

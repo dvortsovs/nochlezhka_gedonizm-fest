@@ -1,0 +1,15 @@
+.footer__mail {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7100ff;
+  padding: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

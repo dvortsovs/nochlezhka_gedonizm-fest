@@ -1,0 +1,10 @@
+.popup-nav__nav-list-item{
+  margin-top: 12px;
+}
+
+.popup-nav__nav-list-item::marker {
+  white-space: normal;
+  text-transform: none;
+  unicode-bidi: isolate;
+  font-variant-numeric: normal;
+}

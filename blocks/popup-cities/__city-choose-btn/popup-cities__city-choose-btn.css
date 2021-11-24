@@ -1,0 +1,11 @@
+.popup-cities__city-choose-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: left;
+  cursor: pointer;
+}

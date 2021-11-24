@@ -1,0 +1,9 @@
+.footer__social-icon_type_facebook {
+  background-image: url('../../../../images/facebook.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__social-icon_type_facebook:hover  {
+  background-image: url('../../../../images/facebook_hover.svg');
+}

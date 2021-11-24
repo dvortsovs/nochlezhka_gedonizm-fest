@@ -1,0 +1,21 @@
+.footer {
+  display: grid;
+  grid-template-columns: min-content 310px 427px 310px;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 80px 40px 87px 40px;
+  background-color: #ebe9ed;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    background-color: #ffd400;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+    gap: 48px;
+    padding: 40px 20px 40px 20px;
+  }
+}

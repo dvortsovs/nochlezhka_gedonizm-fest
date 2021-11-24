@@ -1,0 +1,10 @@
+.footer__picture {
+  width: 193px;
+  height: 193px;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__picture {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.footer__links_type_social {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer__links_type_social {
+    gap: 16px;
+  }
+}

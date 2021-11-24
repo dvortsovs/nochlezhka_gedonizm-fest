@@ -1,0 +1,11 @@
+.partners {
+  box-sizing: border-box;
+  padding: 80px 40px 80px 40px;
+}
+
+@media screen and (max-width: 990px) {
+  .partners {
+    background-color: #EBE9ED;
+    padding: 40px 0 40px 0;
+  }
+}

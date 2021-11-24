@@ -1,0 +1,12 @@
+.link_with-color {
+  color: #FCFAF7;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  border-radius: 26px;
+  background-color: #7100FF;
+}
+
+.link_with-color:hover {
+  color: #FCFAF7;
+  background-color: #5100B8;
+}

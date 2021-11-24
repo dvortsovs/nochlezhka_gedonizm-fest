@@ -1,0 +1,11 @@
+.partners__logo_type_surf {
+  background-image: url('../../../../images/surf-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 990px) {
+  .partners__logo_type_surf {
+    background-image: url('../../../../images/surf-logo-black.png'); /* has white background */
+  }
+}

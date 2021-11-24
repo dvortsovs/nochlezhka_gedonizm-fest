@@ -1,0 +1,7 @@
+.page {
+  max-width: 100%;
+  min-width: 360px;
+  margin: 0 auto;
+  color: #3B3748;
+  font-family: 'TT_Firs_Neue', 'Arial', sans-serif;
+}

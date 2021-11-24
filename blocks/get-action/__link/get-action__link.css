@@ -1,0 +1,28 @@
+.get-action__link {
+  text-decoration: none;
+  color: #3B3748;
+  border: 2px solid #3B3748;
+  box-sizing: border-box;
+  border-radius: 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 48px;
+  margin: 24px 0 0;
+  white-space: nowrap;
+}
+@media screen and (max-width: 850px) {
+  .get-action__link {
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    width: 176px;
+    height: 44px;
+    margin: 12px 0 0;
+  }
+}

@@ -1,0 +1,15 @@
+.header__like-logo {
+  vertical-align:bottom;
+  width: 24px;
+  height: 21px;
+  margin-right: 8px;
+}
+
+
+@media screen and (max-width: 488px) {
+  .header__like-logo {
+    margin-right: 4px;
+    width: 20px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,8 @@
+.popup-cities__backspace-arrow{
+  width: 20px;
+  height: 10px;
+  background-image: url("./images/popup-cities__backspace-arrow-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

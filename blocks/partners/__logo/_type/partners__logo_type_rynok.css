@@ -1,0 +1,9 @@
+.partners__logo_type_rynok {
+  background-image: url('../../../../images/rynok-logo.png');
+}
+
+@media screen and (max-width: 990px) {
+  .partners__logo_type_rynok {
+    background-image: url('../../../../images/rynok-logo-black.png'); /* has white background */
+  }
+}

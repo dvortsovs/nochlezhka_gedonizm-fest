@@ -1,0 +1,9 @@
+.footer__social-icon_type_instagram {
+  background-image: url('../../../../images/instagram.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__social-icon_type_instagram:hover  {
+  background-image: url('../../../../images/instagram_hover.svg');
+}

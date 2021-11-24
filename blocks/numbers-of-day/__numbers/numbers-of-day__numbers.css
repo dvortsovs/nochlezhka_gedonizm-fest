@@ -1,0 +1,20 @@
+.numbers-of-day__numbers {
+  margin-top: 332px;
+  width: 303px;
+  margin-left: 17.8%;
+}
+.numbers-of-day__numbers:last-of-type {
+  width: 303px;
+  margin-left: 60%;
+  margin-top: 132px;
+}
+@media screen and (max-width: 850px) {
+  .numbers-of-day__numbers {
+    width: 320px;
+    margin: 372px 0 0;
+  }
+  .numbers-of-day__numbers:last-of-type {
+    width: 320px;
+    margin: 352px 0 0;
+  }
+}

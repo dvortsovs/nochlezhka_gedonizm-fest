@@ -1,0 +1,20 @@
+.numbers-of-day__illustrations {
+  height: 720px;
+  margin: 40px 40px 80px;
+  background-image: url('../../../images/number-of-day__illustrations.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 850px) {
+  .numbers-of-day__illustrations {
+    height: 864px;
+    background-image: url('../../../images/number-of-day__illustrations-mobile.svg');
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 40px;
+  }
+}

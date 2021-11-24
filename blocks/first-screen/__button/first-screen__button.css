@@ -1,0 +1,17 @@
+.first-screen__button {
+  width: 44px;
+  height: 44px;
+  box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
+  border: none;
+  border-radius: 100px;
+  margin: 0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease-in-out;
+}
+
+.first-screen__button:hover {
+  background-color: #5100B8;
+}

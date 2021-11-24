@@ -1,0 +1,9 @@
+.header__nav-link {
+  padding: 12px 0;
+  margin: 0;
+  margin-right: 44px;
+}
+
+.header__nav-link:last-of-type {
+  margin-right: 0;
+}

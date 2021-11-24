@@ -1,0 +1,20 @@
+.popup-nav{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  box-sizing: border-box;
+  width: 360px;
+  height: calc(100vh - 88px);
+  padding: 20px;
+  top: 88px;
+  right: 0;
+  background-color: #FCFAF7;
+}
+
+@media screen and (max-width: 360px){
+  .popup-nav{
+    top: 68px;
+    height: calc(100vh - 68px);
+  }
+}

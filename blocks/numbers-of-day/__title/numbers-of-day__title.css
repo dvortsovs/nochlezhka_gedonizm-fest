@@ -1,0 +1,16 @@
+.numbers-of-day__title {
+  margin: 80px 40px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  text-transform: lowercase;
+  letter-spacing: -0.01em;
+  color: #3B3748;
+}
+@media screen and (max-width: 850px) {
+  .numbers-of-day__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 40px 20px 0;
+  }
+}

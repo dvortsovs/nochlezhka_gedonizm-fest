@@ -1,0 +1,8 @@
+.popup-nav__city-list{
+  width: 7px;
+  height: 14px;
+  background-image: url("./images/popup-nav__city-list-marker.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
